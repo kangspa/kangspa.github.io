@@ -56,3 +56,5 @@ giscus_repoId: "[ENTER REPO ID HERE]"
 giscus_category: "[ENTER CATEGORY NAME HERE]"
 giscus_categoryId: "[ENTER CATEGORY ID HERE]"
 ```
+
+한글은 폰트가 어떻게 나오는지 확인해보겠습니다.
