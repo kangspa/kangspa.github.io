@@ -49,6 +49,15 @@
     src: local('Lato'),
          url("{{ site.baseurl }}/assets/fonts/Lato-Regular.woff2") format("woff2");
 }
+
+body {
+  background: var(--body-bg);
+  color: var(--text-color);
+  letter-spacing: 0;
+  -webkit-font-smoothing: antialiased;
+  font-family: "D2Coding";
+  line-height: 1.75;
+}
 </style>
 
 <script src="{{ '/assets/js/fontfaceobserver.js' | prepend: site.baseurl }}" type="text/javascript"></script>
