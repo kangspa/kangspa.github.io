@@ -15,11 +15,20 @@
 <link rel="shortcut icon" type="image/png" href="{{ site.logo_img | prepend: site.baseurl }}">
 <style>
 @font-face {
-    font-family: 'D2Coding';
+    font-family: 'D2CodingN';
+    font-style: normal;
+    font-weight: 400;
+    font-display: optional;
+    src: local('D2CodingN'),
+         url("{{ site.baseurl }}/assets/fonts/D2Coding-Ver1.3.2-20180524.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'D2CodingB';
     font-style: normal;
     font-weight: 600;
     font-display: optional;
-    src: local('D2Coding'),
+    src: local('D2CodingB'),
          url("{{ site.baseurl }}/assets/fonts/D2Coding-Ver1.3.2-20180524.ttf") format("truetype");
 }
 
@@ -54,13 +63,15 @@
 
 <script src="{{ '/assets/js/fontfaceobserver.js' | prepend: site.baseurl }}" type="text/javascript"></script>
 <script type="text/javascript">
-    const DCoObserver = new FontFaceObserver('D2Coding');
+    const D2CNObserver = new FontFaceObserver('D2CodingN');
+    const D2CBObserver = new FontFaceObserver('D2CodingB');
     const nunitoObserver = new FontFaceObserver('Nunito Sans');
     const righteousObserver = new FontFaceObserver('Righteous');
     const latoObserver = new FontFaceObserver('Lato');
   
     Promise.all([
-        DCoObserver.load(),
+        D2CNObserver.load(),
+        D2CBObserver.load(),
         nunitoObserver.load(),
         righteousObserver.load(),
         latoObserver.load(),
