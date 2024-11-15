@@ -1,6 +1,7 @@
 ---
 ---
 $baseurl: "{{ site.baseurl }}";
+@import url(https://fonts.googleapis.com/earlyaccess/nanumgothiccoding.css);
 
 html, body {
   margin:0;
@@ -8,8 +9,8 @@ html, body {
 }
 
 .fonts-loaded {
-  a, span, p { font-family:"D2Coding", "Nunito Sans", 'Lucida Sans', sans-serif; }
-  h1, h2, h3 { font-family:"D2Coding", "Lato", Helvetica, sans-serif; }
+  a, span, p { font-family:"Nanum Gothic Coding", "Nunito Sans", 'Lucida Sans', sans-serif; }
+  h1, h2, h3 { font-family:"Nanum Gothic Coding", "Lato", Helvetica, sans-serif; }
   mark { font-family: 'Righteous', sans-serif; }
 }
 
