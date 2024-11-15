@@ -15,8 +15,6 @@ bookmark: true
 
 To comment, visitors must authorize the giscus app to post on their behalf using the GitHub OAuth flow. Alternatively, visitors can comment on the GitHub Discussion directly. You can moderate the comments on GitHub.
 
-테스트를 하기 위한 한글 문장입니다.
-
 # Prerequisites
 ---
 
