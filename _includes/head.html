@@ -15,21 +15,21 @@
 <link rel="shortcut icon" type="image/png" href="{{ site.logo_img | prepend: site.baseurl }}">
 <style>
 @font-face {
-    font-family: 'D2CodingN';
+    font-family: 'D2Coding';
     font-style: normal;
     font-weight: 400;
     font-display: optional;
-    src: local('D2CodingN'),
+    src: local('D2Coding'),
          url("{{ site.baseurl }}/assets/fonts/D2Coding-Ver1.3.2-20180524.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: 'D2CodingB';
+    font-family: 'D2CodingBold';
     font-style: normal;
     font-weight: 600;
     font-display: optional;
-    src: local('D2CodingB'),
-         url("{{ site.baseurl }}/assets/fonts/D2Coding-Ver1.3.2-20180524.ttf") format("truetype");
+    src: local('D2CodingBold'),
+         url("{{ site.baseurl }}/assets/fonts/D2CodingBold-Ver1.3.2-20180524.ttf") format("truetype");
 }
 
 @font-face {
@@ -63,8 +63,8 @@
 
 <script src="{{ '/assets/js/fontfaceobserver.js' | prepend: site.baseurl }}" type="text/javascript"></script>
 <script type="text/javascript">
-    const D2CNObserver = new FontFaceObserver('D2CodingN');
-    const D2CBObserver = new FontFaceObserver('D2CodingB');
+    const D2CNObserver = new FontFaceObserver('D2Coding');
+    const D2CBObserver = new FontFaceObserver('D2CodingBold');
     const nunitoObserver = new FontFaceObserver('Nunito Sans');
     const righteousObserver = new FontFaceObserver('Righteous');
     const latoObserver = new FontFaceObserver('Lato');
