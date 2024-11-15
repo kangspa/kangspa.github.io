@@ -15,8 +15,6 @@ bookmark: true
 
 To comment, visitors must authorize the giscus app to post on their behalf using the GitHub OAuth flow. Alternatively, visitors can comment on the GitHub Discussion directly. You can moderate the comments on GitHub.
 
-테스트를 하기 위한 한글 문장입니다.
-
 # Prerequisites
 ---
 
@@ -58,5 +56,3 @@ giscus_repoId: "[ENTER REPO ID HERE]"
 giscus_category: "[ENTER CATEGORY NAME HERE]"
 giscus_categoryId: "[ENTER CATEGORY ID HERE]"
 ```
-
-한글은 폰트가 어떻게 나오는지 확인해보겠습니다.
