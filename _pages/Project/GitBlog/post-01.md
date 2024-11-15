@@ -12,7 +12,7 @@ bookmark: true
 # Follow the guidance
 ---
 **`jekyll-theme-satellite` 테마를 적용하여 현재 블로그를 만들었다.**
-![jekyll-theme-satellite](https://jekyll-themes.com/byanko55/jekyll-theme-satellite)
+메인페이지 : [jekyll-theme-satellite](https://jekyll-themes.com/byanko55/jekyll-theme-satellite)
 
 1. 해당 url에서 이미지와 같은 버튼 둘 중 하나를 눌러, Github 페이지로 이동한다.
 ![Image1](/assets/img/Project/GitBlog/post-01/1.png)
