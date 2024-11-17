@@ -4,7 +4,7 @@ tags:
     - jekyll 폰트
     - D2Coding
 date: "2024-11-15"
-thumbnail: "/assets/img/Project/GitBlog/2. 폰트 변경하기/thumbnail.png"
+thumbnail: "/assets/img/Project/GitBlog/post-02/thumbnail.png"
 ---
 
 # Follow the guidance
@@ -13,11 +13,11 @@ thumbnail: "/assets/img/Project/GitBlog/2. 폰트 변경하기/thumbnail.png"
 메인페이지 : [d2codingfont](https://github.com/naver/d2codingfont?tab=readme-ov-file)
 
 1. 해당 url에서 최신 버전 폰트 다운로드
-![Image1](/assets/img/Project/GitBlog/2. 폰트 변경하기/1.png)
+![Image1](/assets/img/Project/GitBlog/post-02/1.png)
 
 2. 필요한 폰트를 `/assets/fonts/` 하위에 넣어둔다.
 저는 일반 폰트와 Bold 폰트만 다운받아서 넣어뒀습니다.
-![Image2](/assets/img/Project/GitBlog/2. 폰트 변경하기/2.png)
+![Image2](/assets/img/Project/GitBlog/post-02/2.png)
 
 3. `_includes/head.html` 에서 `<style>` 태그 안에 `@font-face`를 작성해준다.
 전 일반 폰트는 400, Bold는 600으로 font-weight을 작성했는데, 기존 폰트들이 h 태그에 적용하는건 600, a, p 적용은 400으로 해둬서 맞춰서 해봤습니다.
