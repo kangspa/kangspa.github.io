@@ -4,12 +4,12 @@ logo_img: "/assets/img/favicon.webp"
 profile_img: "/assets/img/profile.webp"
 
 # Social Links
-email: kangspa98@naver.com
 github_username: kangspa
-tistory_username: kangspa
-instagram_username: 
 linkedin_username: 
+instagram_username: 
 facebook_username: 
+tistory_username: kangspa
+email: kangspa98@naver.com
 
 # External API
 giscus_repo: "kangspa/kangspa.github.io"
