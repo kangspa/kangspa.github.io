@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
         if(load_div != null){
             setTimeout(function(){
-                load_div.style.transition = '.25s';
+                load_div.style.transition = '.1s';
                 load_div.style.opacity = '0';
                 load_div.style.visibility = 'hidden';
             }, 800);
