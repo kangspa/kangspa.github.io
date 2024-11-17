@@ -31,7 +31,7 @@ thumbnail: "/assets/img/Project/GitBlog/post-04/thumbnail.png"
 ```html
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 408.4 408.4"><g><circle class="cls-1" cx="58.18" cy="58.18" r="58.18"/><circle class="cls-1" cx="204.2" cy="58.18" r="58.18"/><circle class="cls-1" cx="204.2" cy="204.2" r="58.18"/><circle class="cls-1" cx="204.2" cy="350.22" r="58.18"/><circle class="cls-1" cx="350.22" cy="58.18" r="58.18"/></g></svg>
 ```
-- 출처 : https://marshall-ku.tistory.com/203
+- 출처 : [https://marshall-ku.tistory.com/203](https://marshall-ku.tistory.com/203)
 
 사실 이미지 적용하고 href 변경해서 링크 바꿨으면 이제 끝났긴하다.
 다만 필자는 기본틀을 최대한 해치지 않는 선에서 진행하고 싶기도 했고, 변수명?이 아직 twitter인 점도 불편하기도 하여 아예 아래와 같이 전부 바꿨다.
