@@ -12,10 +12,10 @@ linkedin_username: linkedin
 facebook_username: facebook
 
 # External API
-giscus_repo:
-giscus_repoId:
-giscus_category:
-giscus_categoryId:
+giscus_repo: [data-repo]
+giscus_repoId: [data-repo-id]
+giscus_category: [data-category]
+giscus_categoryId: [data-category-id]
 goatcounter_code:
 google_analytics:
 

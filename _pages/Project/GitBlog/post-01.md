@@ -8,8 +8,6 @@ date: "2024-11-15"
 thumbnail: "/assets/img/Project/GitBlog/post-01/thumbnail.png"
 ---
 
-# Follow the guidance
----
 **`jekyll-theme-satellite` 테마를 적용하여 현재 블로그를 만들었다.**
 메인페이지 : [jekyll-theme-satellite](https://jekyll-themes.com/byanko55/jekyll-theme-satellite)
 

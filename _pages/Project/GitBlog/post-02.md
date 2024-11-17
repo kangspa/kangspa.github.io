@@ -7,8 +7,6 @@ date: "2024-11-15"
 thumbnail: "/assets/img/Project/GitBlog/post-02/thumbnail.png"
 ---
 
-# Follow the guidance
----
 개인적으로 D2Coding 폰트를 접한 뒤로, 해당 폰트를 즐겨 사용하기에 해당 블로그도 D2Coding 폰트를 적용하였다.
 메인페이지 : [d2codingfont](https://github.com/naver/d2codingfont?tab=readme-ov-file)
 
