@@ -2,6 +2,7 @@
 title: Introduce Blog"
 date: "2024-11-17"
 thumbnail: "/assets/img/introduce.png"
+bookmark: true
 ---
 
 해당 블로그에 대한 간단한 설명.
