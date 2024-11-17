@@ -9,13 +9,15 @@ thumbnail: "https://i.ibb.co/V9j2Qsg/giscus-Wl0-X3byd-az-U68-1.webp"
 
 사실상 해당 테마의 docs 파일에서 확인 가능한 `Comment System.md` 과 `Visitor Counter.md` 내용을 보고 따라했다.
 간단히 상세 단계를 한글로 작성했다 정도?
+
 ---
 ## Giscus를 활용한 댓글 연동
 
 해당 블로그에서 댓글은 Giscus를 활용했는데, 이는 Github 레포지토리의 discussions 내용을 각 포스팅 하위에 댓글처럼 보여주는 앱이다.
 그렇기에 별도의 DB를 필요로 하지 않아서 좋다!
 
-1. 현재 만들어둔 블로그 레포지토리(`username`.github.io)의 `Settings`→`General`→`Features` 에서 `Discussions`를 체크해준다.
+1. 현재 만들어둔 블로그 레포지토리(`username`.github.io)의
+`Settings`→`General`→`Features` 에서 `Discussions`를 체크해준다.
 ![Image1](/assets/img/Project/GitBlog/post-03/1.png)
 
 2. 현재 만들어둔 블로그 레포지토리(`username`.github.io)에 [Giscus](https://github.com/apps/giscus)를 설치해준다.
@@ -38,6 +40,7 @@ thumbnail: "https://i.ibb.co/V9j2Qsg/giscus-Wl0-X3byd-az-U68-1.webp"
 
 이렇게 하면 Giscus를 활용해서 Github 블로그에 댓글 만드는 건 끝났는데, 실제로 되는지는 해당 포스팅 하단에 댓글 달고 확인해봐야겠네요.
 기본적으로 Github 레포지토리의 discussions에 의견을 남기는 형식인만큼, 댓글을 남기려면 Github에 로그인해야 가능합니다.
+
 ---
 
 ## GoatCount로 방문자 수 표시
