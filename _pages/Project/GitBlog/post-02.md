@@ -14,12 +14,12 @@ thumbnail: "/assets/img/Project/GitBlog/post-02/thumbnail.png"
 ![Image1](/assets/img/Project/GitBlog/post-02/1.png)
 
 2. 필요한 폰트를 `/assets/fonts/` 하위에 넣어둔다.
-저는 일반 폰트와 Bold 폰트만 다운받아서 넣어뒀습니다.
+필자는 일반 폰트와 Bold 폰트만 다운받아서 넣어뒀다.
 ![Image2](/assets/img/Project/GitBlog/post-02/2.png)
 
 3. `_includes/head.html` 에서 `<style>` 태그 안에 `@font-face`를 작성해준다.
-전 일반 폰트는 400, Bold는 600으로 font-weight을 작성했는데, 기존 폰트들이 h 태그에 적용하는건 600, a, p 적용은 400으로 해둬서 맞춰서 해봤습니다.
-참고로 다른 폰트를 선호해서 다운받았는데 다른 확장자라면, format 안의 내용을 해당 확장자로 바꾸셔야 합니다.
+해당 블로그는 일반 폰트는 400, Bold는 600으로 font-weight을 작성했는데, 기존 폰트들이 h 태그에 적용하는건 600, a, p 적용은 400으로 해둬서 동일하게 맞춰뒀다.
+참고로 다른 폰트를 선호해서 다운받았는데 다른 확장자라면, format 안의 내용을 해당 확장자로 바꿔야 한다.
 
     ```scss
     @font-face {
@@ -60,7 +60,7 @@ D2Coding 폰트를 찾을 `FontFaceObserver`를 선언해주고, load 하는건 
     ```
 
 5. `assets/css/style.scss` 에서 `font-family` 적용된 부분에 D2Coding 폰트들을 추가해준다.
-`D2Coding`과 `sans-serif`를 제외한 다른 폰트들은 지워도 될 것 같지만, 추후 폰트를 변경할 수도 있을 것 같아 저는 남겨뒀습니다. 용량을 많이 차지하는 것도 아니니까요.
+`D2Coding`과 `sans-serif`를 제외한 다른 폰트들은 지워도 될 것 같지만, 추후 폰트를 변경할 수도 있을 것 같아 필자는 남겨뒀다.
 
     ```scss
     .fonts-loaded {
@@ -78,11 +78,11 @@ D2Coding 폰트를 찾을 `FontFaceObserver`를 선언해주고, load 하는건 
     }
     ```
 
-다른 블로그 글들 보면 간단하게 scss 파일 별도로 만들어서 거기서 body 태그에 폰트 적용되도록 많이 하더라구요.
-빠르고 간단한 방법은 그게 좋긴할텐데, 그냥 기존 코드들 뜯어보고 고치는걸 선호해서 이렇게 진행했습니다. 기본 틀을 해치기 싫기도 했구요.
+다른 블로그 글들 보면 간단하게 scss 파일 별도로 만들어서 거기서 body 태그에 폰트 적용하기도 한다.
+해당 방법이 빠르고 간단하지만, 최대한 기본 틀 유지를 하고 싶어서 이와 같이 진행해보았다.
 
-구글에서 지원하는 외부 폰트를 적용하려면 간단히 `@import` 써서 적용할수도 있습니다.
-다만 인터넷에서 외부 폰트를 다운받아서 연결해야할 경우, 로딩이 좀 더 오래 걸릴수도 있다고 합니다.
+구글에서 지원하는 외부 폰트를 적용하려면 간단히 `@import` 써서 적용할 수 있다.
+다만 인터넷을 통해야하기에, 로딩이 좀 더 오래 걸릴 수 있다.
 
 ```scss
 @import url(https://fonts.googleapis.com/earlyaccess/nanumgothiccoding.css);
