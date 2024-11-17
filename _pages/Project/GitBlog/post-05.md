@@ -46,17 +46,6 @@ window.addEventListener("load", () => {
 
 ---
 
-추가로 로딩 애니메이션 자체를 없애려면, `_layouts/page.html` 파일의 `.inner-content` 요소에서 `{% include loading.html %}` 부분을 주석처리해주면 된다.
+추가로 로딩 애니메이션 자체를 없애려면, `_layouts/page.html` 파일의 `.inner-content` 요소에서 '{% include loading.html %}' 부분을 주석처리해주면 된다.
 다만 모든 로딩 애니메이션이 사라져서 좀 밋밋하기에, 필자는 주석처리를 하진 않고 그냥 시간만 0.1초로 줄여봤다.
-
-```html
-<div class="inner-content">
-    {% include category.html %}
-    {% if page_type == "category" %}
-        <!-- {% include loading.html %} -->
-        {% include pagination.html %}
-    {% else %}
-        {% include post.html %}
-    {% endif %}
-</div>
-```
+![Image1](/assets/img/Project/GitBlog/post-05/1.png)
