@@ -1,4 +1,12 @@
-## [NLP] sparse vector 와 dense vector 차이
+<!-- ---
+title: "sparse vector 와 dense vector 차이"
+tags:
+   - Python
+   - 데이터 처리
+date: "2024-11-19"
+# thumbnail: "/assets/img/Project/GitBlog/post-05/thumbnail.png"
+--- -->
+
  - **Sparse vector** : one-hot vectors, 단어 인덱스만 1이고 나머지는 전부 0으로 표현
     단어 개수가 늘어날수록 벡터의 차원이 한없이 커지는 단점이 있다. (공간적 낭비)
  - **Dense vector** : word embedding(embedding vector), 사용자가 설정한 값으로 모든 단어의 벡터 차원을 맞춘다.

@@ -4,7 +4,6 @@ tags:
     - Python
     - 데이터 처리
 date: "2024-11-19"
-# thumbnail: "/assets/img/Project/GitBlog/post-05/thumbnail.png"
 ---
 
 ## 데이터프레임에서 중복 제거
