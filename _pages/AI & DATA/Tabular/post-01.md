@@ -23,22 +23,22 @@ default 그대로 사용하면, 모든 열 기준으로 중복을 제거한다.
 ## 리스트에서 중복 제거
 
 1. set 활용
-  set 자료구조는 데이터에 중복된 값이 없다는 특징을 활용한다.
-  ex) `list(set('중복제거하려는 리스트'))`
+    set 자료구조는 데이터에 중복된 값이 없다는 특징을 활용한다.
+    ex) `list(set('중복제거하려는 리스트'))`
 
 2. for 반복문
-  중복 제거된 값이 저장될 별도의 리스트를 만들고, 해당 리스트에 이미 있는 값은 제외하면서 원본 리스트를 반복문 돌리며 값을 넣는다.
-  ```python
-  arr = [] # 원본 리스트
-  result = [] # 결과 리스트
-  
-  for v in arr:
-      if v not in result:
-          result.append(v)
-  ```
+    중복 제거된 값이 저장될 별도의 리스트를 만들고, 해당 리스트에 이미 있는 값은 제외하면서 원본 리스트를 반복문 돌리며 값을 넣는다.
+    ```python
+    arr = [] # 원본 리스트
+    result = [] # 결과 리스트
+
+    for v in arr:
+        if v not in result:
+            result.append(v)
+    ```
 
 3. dict 활용
-  딕셔너리의 키 값이 중복 불가인 성질을 활용해준다.
-  ex) `list(dict.fromkeys('중복제거하려는 리스트'))`
+    딕셔너리의 키 값이 중복 불가인 성질을 활용해준다.
+    ex) `list(dict.fromkeys('중복제거하려는 리스트'))`
 
 - 출처 : <https://blockdmask.tistory.com/543>
