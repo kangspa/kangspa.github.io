@@ -9,3 +9,8 @@
  - 참고할만한 자료
   - [2023 벡터 DB 선택을 위한 비교](https://discuss.pytorch.kr/t/2023-picking-a-vector-database-a-comparison-and-guide-for-2023/2625)
   - [벡터 데이터베이스란?](https://www.elastic.co/kr/what-is/vector-database)
+
+미니프로젝트 7차 기준,
+Chroma DB를 통해 구축하며, OpenAIEmbeddings(model="text-embedding-ada-002") 를 임베딩 벡터로 만들 모델로 지정하였다. 문서는 500 사이즈의 chunk 로 분할하여 구축하던 것으로 기억
+
+참고할만한 자료 : https://rfriend.tistory.com/832
