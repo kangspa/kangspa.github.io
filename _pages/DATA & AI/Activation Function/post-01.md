@@ -29,5 +29,5 @@ Sigmoid 사용 시, 기울기 최대가 0.25 라서, 값이 점점 작아지며 
 ---
 
 - 출처
-  - https://datasciencebeehive.tistory.com/102
-  - https://velog.io/@lighthouse97/기울기-소실-문제와-ReLU-함수
+  - <https://datasciencebeehive.tistory.com/102>
+  - <https://velog.io/@lighthouse97/기울기-소실-문제와-ReLU-함수>

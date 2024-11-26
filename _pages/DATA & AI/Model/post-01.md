@@ -45,6 +45,6 @@ date: "2024-11-25"
 ---
 
 - 출처
-  - https://wikidocs.net/61374
-  - https://www.ibm.com/kr-ko/topics/overfitting
-  - https://iotnbigdata.tistory.com/15
+  - <https://wikidocs.net/61374>
+  - <https://www.ibm.com/kr-ko/topics/overfitting>
+  - <https://iotnbigdata.tistory.com/15>

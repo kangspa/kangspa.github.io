@@ -59,7 +59,7 @@ seq2seq 구조와 유사하게 인코더-디코더 를 따르지만, 어텐션�
 ---
 
 - 참고사항
-  - https://modulabs.co.kr/blog/beyond-transformer/
-  - https://www.ibm.com/kr-ko/topics/transformer-model
-  - https://wikidocs.net/31379
-  - https://blogs.nvidia.co.kr/blog/what-is-a-transformer-model/
+  - <https://modulabs.co.kr/blog/beyond-transformer/>
+  - <https://www.ibm.com/kr-ko/topics/transformer-model>
+  - <https://wikidocs.net/31379>
+  - <https://blogs.nvidia.co.kr/blog/what-is-a-transformer-model/>
