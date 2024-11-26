@@ -25,7 +25,7 @@ Sigmoid 사용 시, 기울기 최대가 0.25 라서, 값이 점점 작아지며 
 
 ### 단점
 **죽은 ReLU 문제** : 0 이하 입력에 대해 항상 0을 출력함으로써 일부 뉴런이 활성화되지 않는 문제 발생 가능성이 있다.
-
+---
 - 출처
   - https://datasciencebeehive.tistory.com/102
   - https://velog.io/@lighthouse97/기울기-소실-문제와-ReLU-함수

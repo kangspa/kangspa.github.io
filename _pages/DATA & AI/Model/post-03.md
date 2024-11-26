@@ -35,9 +35,7 @@ Retrieval-Augmented Generation(RAG)은 LLM의 단점 중 **'사실 관계 오류
 2. 최신정보 활용
 3. 사용자 신뢰 강화
 4. 개발자 제어 강화
-
 ---
-
 ## RAG 와 시맨틱 검색의 차이
 
 ###  시맨틱 검색
@@ -48,7 +46,7 @@ Retrieval-Augmented Generation(RAG)은 LLM의 단점 중 **'사실 관계 오류
 
 ### RAG
 RAG는 지식 집약적 작업에 대해 제한된 결과를 제공하며, 개발자는 수동으로 데이터 준비를 할 때 워드 임베딩, 문서 청킹 등 문제를 해결해야 한다.
-
+---
 - 출처
     - <https://modulabs.co.kr/blog/retrieval-augmented-generation/>
     - <https://aws.amazon.com/ko/what-is/retrieval-augmented-generation/>
