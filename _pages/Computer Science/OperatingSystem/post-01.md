@@ -4,7 +4,6 @@ tags:
     - 스레드
     - 프로세스
 date: "2024-11-28"
-# thumbnail: "/assets/img/introduce.png"
 ---
 
 ### 프로세스

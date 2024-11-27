@@ -5,7 +5,6 @@ tags:
     - 확장성
     - 비정형데이터
 date: "2024-11-28"
-# thumbnail: "/assets/img/introduce.png"
 ---
 
 ***"테이블 간 관계를 정의하지 않고, 일반적으론 테이블 간 Join도 불가능."***
