@@ -11,10 +11,10 @@ date: "2024-11-28"
 ***"테이블 간 관계를 정의하지 않고, 일반적으론 테이블 간 Join도 불가능."***
 데이터 일관성은 포기하되 여러 대에 데이터를 분산 저장하는 수평적 확장성(Scale-Out)을 목표로 등장.
 4가지 다양한 형태의 저장기술을 지원한다.
-a. **Document Database** : Key와 Document 형태로 저장, 검색 최적화
-b. **Graph Database** : 그래프 구조를 사용하여 데이터 표현 및 저장(객체와 관계를 그래프 형태로 표현), 데이터 간 관계가 탐색의 키일 경우 적합
-c. **Key-Value Database** : Key와 Value 쌍으로 저장되며 어떠한 형태의 데이터라도 담을 수 있음(이미지나 비디오도 가능), API를 제공하여 질의 속도가 굉장히 빠른 편
-d. **Wide Column Database** : 키에서 필드를 결정하고, 키는 Row(키 값), Column-family, Column-name을 가짐
+1. **Document Database** : Key와 Document 형태로 저장, 검색 최적화
+2. **Graph Database** : 그래프 구조를 사용하여 데이터 표현 및 저장(객체와 관계를 그래프 형태로 표현), 데이터 간 관계가 탐색의 키일 경우 적합
+3. **Key-Value Database** : Key와 Value 쌍으로 저장되며 어떠한 형태의 데이터라도 담을 수 있음(이미지나 비디오도 가능), API를 제공하여 질의 속도가 굉장히 빠른 편
+4. **Wide Column Database** : 키에서 필드를 결정하고, 키는 Row(키 값), Column-family, Column-name을 가짐
 
 ## 특징
 1. 유연성 : 자유로운 Schema-less 구조
