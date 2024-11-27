@@ -1,3 +1,11 @@
+---
+title: "정리 안됨"
+tags:
+    - DB
+date: "2024-11-28"
+# thumbnail: "/assets/img/introduce.png"
+---
+
 ## [DB] Vector DB를 RDB(Relational Database)와 비교했을 때 차이점 및 장점
  - **RDB** : 전통적인 관계형 데이터베이스 시스템으로, 테이블 형태로 데이터를 저장하고 SQL로 조작
     정형데이터 다루는데 적합하며, 테이블 간 관계 설정을 통해 일관성 및 무결성 유지가 가능하다.
