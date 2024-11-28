@@ -27,3 +27,10 @@ thumbnail: "/assets/img/Project/GitBlog/post-01/thumbnail.png"
 계정 당 하나의 페이지(~.github.io)만 호스팅 지원해주는 것 같으니, 다른 성격의 개인 페이지를 열고 싶다면 또다른 계정 사용이 필요하다.
 
 무엇보다 서버 단에서 구동되는 언어는 지원 안해준다고 전에 봤던 것으로 기억하니, 직접 개인 페이지를 제작하고 싶다면 JS로 해야하는게 필수.
+
+---
+
+위와 같이 Github에서만 모든 과정을 진행하니, 자신만의 페이지로 꾸밀 때 404 에러가 발생하는 것 같다.
+아래 추가 작성한 내용을 참고하여 `Readme.md`의 `Installaion`을 전부 따르는게 좋을 것 같다.
+
+- 참고 : [Jekyll 테마 404 에러 해결](https://kangspa.github.io/Project/GitBlog/post-06.html)
