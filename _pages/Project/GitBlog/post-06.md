@@ -57,9 +57,8 @@ thumbnail: "/assets/img/Project/GitBlog/post-06/thumbnail.png"
 
 ---
 
-필자의 경우, 추가로 `/assets/img/thumbnail/empty.jpg` 가 없다고 thumbnail 없는 포스트를 열 때 썸네일 로드를 못하는 오류가 있는 거였는데, 이는 내가 해당 폴더의 이미지들 쓸 일이 없겠지 생각해서 삭제했던 부분도 있다.
-해당 부분은 `_includes/search_event.html`에서 확인 가능한데, 필자는 empty.jpg 이미지만 다시 다운받아서 `/assets/img/empty.jpg` 로 옮겨두고, 해당 경로도 수정함으로써 에러가 발생하는 건 없앴다.
-![Image7](/assets/img/Project/GitBlog/post-06/7.png)
+필자의 경우, 추가로 `/assets/img/thumbnail/empty.jpg` 가 없다고 thumbnail 없는 포스트를 열 때 썸네일 로드를 못하는 오류가 있었다.
+이는 내가 해당 폴더의 이미지들 쓸 일이 없겠지 생각해서 삭제했던 부분이었는데, 해당 오류가 발생하는 것을 확인한 후 원복시켰다.
 
 아마 기존에 작성한 포스트도 썸네일을 비워뒀었는데, 그 때는 404 에러가 안 떳던걸 보면 해당 부분은 404 에러에 직접적인 영향은 없었으리라 생각된다.
 다만 이것까지 하고나서 404 에러가 안 뜨는 것을 확인한만큼, 혹시나 하는 마음에 함께 작성해둔다.

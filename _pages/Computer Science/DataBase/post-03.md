@@ -1,10 +1,10 @@
 ---
-title: "Vector DB에 대해"
+title: Vector DB에 대해
 tags:
     - vector
     - chroma
-	- NLP
-	- LLM
+    - NLP
+    - LLM
 date: "2024-11-29"
 ---
 
