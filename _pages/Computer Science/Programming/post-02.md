@@ -5,7 +5,7 @@ tags:
 date: "2024-12-02"
 thumbnail: "https://i0.wp.com/blogcodestates.com/wp-content/uploads/2022/11/객체-지향-프로그래밍-추상화.png?resize=768%2C509&ssl=1"
 ---
-<p style="font-size:0.9rem" href="https://www.codestates.com/blog/content/객체-지향-프로그래밍-특징">- 출처 : 코드스테이트 인사이트 : 객체 지향 프로그래밍의 4가지 특징ㅣ추상화, 상속, 다형성, 캡슐화</p>
+<a style="font-size:0.9rem" href="https://www.codestates.com/blog/content/객체-지향-프로그래밍-특징">- 출처 : 코드스테이트 인사이트 : 객체 지향 프로그래밍의 4가지 특징ㅣ추상화, 상속, 다형성, 캡슐화</a>
 
 # 객체지향
 데이터를 추상화 시켜 상태와 행위를 가진 객체로 만들고, 해당 객체들의 상호작용을 통해 프로그램을 만드는 방식
