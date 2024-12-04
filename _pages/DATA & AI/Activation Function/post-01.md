@@ -4,9 +4,9 @@ tags:
    - ReLU
    - 활성함수
 date: "2024-11-26"
-thumbnail: "https://i.imgur.com/eiafu9i.png"
+thumbnail: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/ReLU_and_GELU.svg/220px-ReLU_and_GELU.svg.png"
 ---
-<a style="font-size:0.9rem" href="https://velog.io/@lighthouse97/기울기-소실-문제와-ReLU-함수">- 출처 : 기울기 소실 문제와 ReLU 함수</a>
+<a style="font-size:0.9rem" href="https://en.wikipedia.org/wiki/Rectifier_(neural_networks)">- 출처 : Rectifier (neural networks)</a>
 
 ***"0보다 클 경우 입력을 그대로 출력하고, 0이하일 경우 0을 출력하는 비선형 함수 (max(0, x))"***
 계산 효율성이 높고 모델 학습 시간을 단축시키는데 도움이 된다.
