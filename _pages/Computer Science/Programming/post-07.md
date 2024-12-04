@@ -1,4 +1,13 @@
-# [DesignPattern] 팩토리 패턴, 장점
+---
+title: 팩토리 패턴의 의미와 장점
+tags:
+    - 디자인패턴
+    - 팩토리패턴
+date: "2024-12-04"
+thumbnail: "https://refactoring.guru/images/patterns/content/factory-method/factory-method-ko.png"
+---
+<a style="font-size:0.9rem" href="https://refactoring.guru/ko/design-patterns/factory-method">- 출처 : refactoring.guru</a>
+
 객체를 사용하는 코드에서 객체 생성 부분을 떼어내 추상화한 패턴.   
 상속 관계에 있는 두 클래스에서 상위 클래스는 뼈대를, 하위 클래스에서 구체적 내용을 결정하는 패턴.
 

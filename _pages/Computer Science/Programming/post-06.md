@@ -1,4 +1,13 @@
-# [DesignPattern] 전략 패턴, 사용하는 상황
+---
+title: 전략 패턴의 의미와 사용하는 상황
+tags:
+    - 디자인패턴
+    - 전략패턴
+date: "2024-12-04"
+thumbnail: "https://refactoring.guru/images/patterns/content/strategy/strategy.png"
+---
+<a style="font-size:0.9rem" href="https://refactoring.guru/ko/design-patterns/strategy">- 출처 : refactoring.guru</a>
+
 객체의 행위를 바꾸고 싶은 경우, '직접' 수정하지 않고 '캡슐화한 알고리즘'을 컨텍스트 안에서 바꿔주면서 상호 교체가 가능하게 만드는 패턴.
 
 - 사용하는 상황
