@@ -5,8 +5,9 @@ tags:
     - RAG
     - 시맨틱 검색
 date: "2024-11-26"
-# thumbnail: "/assets/img/Project/GitBlog/post-05/thumbnail.png"
+thumbnail: "https://docs.aws.amazon.com/images/sagemaker/latest/dg/images/jumpstart/jumpstart-fm-rag.jpg"
 ---
+<a style="font-size:0.9rem" href="https://aws.amazon.com/ko/what-is/retrieval-augmented-generation/">- 출처 : 검색 증강 생성(RAG)이란 무엇인가요?</a>
 
 Retrieval-Augmented Generation(RAG)은 LLM의 단점 중 **'사실 관계 오류 가능성'**과 **'맥락 이해의 한계'**를 개선하는 데 초점을 맞춘다.
 

@@ -6,7 +6,7 @@ tags:
    - vector
    - Word2Vec
 date: "2024-11-21"
-# thumbnail: "/assets/img/Project/GitBlog/post-05/thumbnail.png"
+thumbnail: "/assets/img/DATA & AI/Natural Language Processing/post-02/thumbnail.png"
 ---
 
 # Embedding 임베딩

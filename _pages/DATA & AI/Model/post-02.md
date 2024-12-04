@@ -5,8 +5,9 @@ tags:
    - 어텐션
    - 트랜스포머
 date: "2024-11-26"
-# thumbnail: "/assets/img/Project/GitBlog/post-05/thumbnail.png"
+thumbnail: "https://blogs.nvidia.co.kr/wp-content/uploads/sites/16/2022/04/%E1%84%86%E1%85%AE%E1%84%8C%E1%85%A61-1280x675.png"
 ---
+<a style="font-size:0.9rem" href="https://blogs.nvidia.co.kr/blog/what-is-a-transformer-model/">- 출처 : 트랜스포머 모델이란 무엇인가? (1)</a>
 
 트랜스포머 모델에 대해 알아보기 전에, **'어텐션 메커니즘'**이 무엇인지 알아야한다.
 

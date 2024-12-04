@@ -5,8 +5,9 @@ tags:
    - Lasso
    - Ridge
 date: "2024-11-25"
-# thumbnail: "/assets/img/Project/GitBlog/post-05/thumbnail.png"
+thumbnail: "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbpiXa9%2Fbtq4f9ZWSP7%2FVPowzKfrCCIMPRevoq5pDK%2Fimg.png"
 ---
+<a style="font-size:0.9rem" href="https://iotnbigdata.tistory.com/15">- 출처 : 기계학습 : 과적합을 방지하는 방법 6가지</a>
 
 ## 과적합
 모델, 알고리즘이 학습 데이터에 지나치게 적합한 상태가 되어, 해당 데이터셋이 아닌 다른 데이터에서는 정확한 예측, 추론을 하지 못하는 현상.

@@ -4,7 +4,7 @@ tags:
     - Python
     - 데이터 처리
 date: "2024-11-19"
-# thumbnail: "/assets/img/Project/GitBlog/post-05/thumbnail.png"
+thumbnail: "/assets/img/DATA & AI/Natural Language Processing/post-01/thumbnail.png"
 ---
 
 ### 문장 분리
