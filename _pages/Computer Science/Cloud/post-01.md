@@ -7,7 +7,9 @@ tags:
     - 서브넷
     - 라우팅
 date: "2024-12-01"
+thumbnail: "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*I_3RxWyOPMj9lQs1xhEebg.png"
 ---
+<a style="font-size:0.9rem" href="https://medium.com/harrythegreat/aws-가장쉽게-vpc-개념잡기-71eef95a7098">- 출처 : [AWS] 가장쉽게 VPC 개념잡기 중</a>
 
 - **VPN** : Virtual Private Network(가상사설망), 보안상 문제 등으로 인해 네트워크 분리가 필요할 경우 사용
 

@@ -5,7 +5,9 @@ tags:
     - 분산 부하
     - AWS
 date: "2024-12-01"
+thumbnail: "https://post-phinf.pstatic.net/MjAxOTEyMTBfMjE3/MDAxNTc1OTU0ODk1ODQ3.-GJxkoK7Apn4l0K5L1OXN4NFGsseRoaNhW2r0KIQJdog.0BchcWEI-WS-uEb3iRRrD0JyO_6eZoIWh7xf4f4J2fMg.JPEG/%EB%A1%9C%EB%93%9C%EB%B0%B8%EB%9F%B0%EC%84%9C_%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98.jpg?type=w1200"
 ---
+<a style="font-size:0.9rem" href="https://m.post.naver.com/viewer/postView.naver?volumeNo=27046347&memberNo=2521903">- 출처 : 로드밸런서(Load Balancer)의 개념과 특징</a
 
 로드밸런서란, 서버에 가해지는 부하를 분산해주는 장치 또는 기술을 통칭하는 말이다.
 클라이언트와 서버풀(Server Pool, 분산 네트워크를 구성하는 서버들의 그룹) 사이에 위치한다.
