@@ -5,7 +5,9 @@ tags:
     - 관계형
     - 정형데이터
 date: "2024-11-28"
+thumbnail: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Relational_database_terms.svg/350px-Relational_database_terms.svg.png"
 ---
+<a style="font-size:0.9rem" href="https://en.wikipedia.org/wiki/Relational_database">- 출처 : Relational database</a>
 
 ***"관계형 데이터베이스 관리 시스템, 모든 데이터를 2차원 테이블 형태로 표현한 DB를 생성, 수정, 삭제, 관리하는 소프트웨어."***
 관계를 나타내기 위해 외래 키를 사용하고, 외래 키를 이용한 테이블 간 Join이 가능하다는 것이 특징

@@ -5,7 +5,9 @@ tags:
     - 확장성
     - 비정형데이터
 date: "2024-11-28"
+thumbnail: "https://jaro-website.s3.ap-south-1.amazonaws.com/2024/04/1-aft5e-gFeDW4DQ8tayEsrA.webp"
 ---
+<a style="font-size:0.9rem" href="https://www.jaroeducation.com/blog/what-is-nosql/">- 출처 : What Is NoSQL? NoSQL Databases Explained</a>
 
 ***"테이블 간 관계를 정의하지 않고, 일반적으론 테이블 간 Join도 불가능."***
 데이터 일관성은 포기하되 여러 대에 데이터를 분산 저장하는 수평적 확장성(Scale-Out)을 목표로 등장.

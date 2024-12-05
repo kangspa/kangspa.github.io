@@ -6,7 +6,9 @@ tags:
     - NLP
     - LLM
 date: "2024-11-29"
+thumbnail: "https://cdn.prod.website-files.com/63ccf2f0ea97be12ead278ed/65c1e9339899b6ff2d90a1ed_Learn%20about%20Vector%20Database%20(2)-p-800.png"
 ---
+<a style="font-size:0.9rem" href="https://www.decube.io/post/vector-database-concept">- 출처 : Vector Databases Explained: Key Features, AI Integration, and Use Cases</a>
 
 # Vector DB란?
 실시간 분석 및 검색에 특화된 데이터베이스로, 벡터 형태의 데이터 모델 사용 및 고차원 벡터로 데이터를 표현한다.
