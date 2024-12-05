@@ -4,8 +4,9 @@ tags:
     - API
     - REST
 date: "2024-12-01"
-# thumbnail: "/assets/img/Computer Science/Network/post-01/thumbnail.png"
+thumbnail: "https://images.ctfassets.net/vwq10xzbe6iz/5sBH4Agl614xM7exeLsTo7/9e84dce01735f155911e611c42c9793f/rest-api.png"
 ---
+<a style="font-size:0.9rem" href="https://mannhowie.com/rest-api">- 출처 : REST API Basics - 4 Things you Need to Know</a>
 
 - **API** : Application Programming Interface, 프로그램 간 상호작용하기위한 규약
 - **REST** : Representational State Transfer, 대규모 고성능 통신을 안정적으로 지원할 수 있다.

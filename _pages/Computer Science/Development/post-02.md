@@ -5,6 +5,7 @@ tags:
     - 이슈 처리
     - pull&request
 date: "2024-12-01"
+thumbnail: "assets/img/Computer Science/Development/post-02/thumbnail.jpg"
 ---
 
 1. 새로운 Issue 생성

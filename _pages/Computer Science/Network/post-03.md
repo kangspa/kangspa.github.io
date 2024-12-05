@@ -5,8 +5,9 @@ tags:
     - Async
     - Ajax
 date: "2024-12-01"
-# thumbnail: "/assets/img/Computer Science/Network/post-01/thumbnail.png"
+thumbnail: "https://velog.velcdn.com/images/gparkkii/post/4de8a054-725e-4207-8a84-349a43a248c1/bCgJKDY.jpg"
 ---
+<a style="font-size:0.9rem" href="https://velog.io/@gparkkii/whatisajax">- 출처 : AJAX란 무엇인가</a>
 
 # Sync
 동기 통신, 요청과 응답이 동시에 일어남 (순서 보장 o)

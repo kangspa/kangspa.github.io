@@ -4,7 +4,9 @@ tags:
     - CI
     - CD
 date: "2024-12-01"
+thumbnail: "https://www.redhat.com/rhdc/managed-files/styles/wysiwyg_full_width/private/ci-cd-flow-desktop.png.webp?itok=mDEvsSsp"
 ---
+<a style="font-size:0.9rem" href="https://www.redhat.com/ko/topics/devops/what-is-ci-cd">- 출처 : CI/CD란?</a>
 
 - **CI**(Continuous Integration, 지속적 통합)
     코드 변경 사항을 공유 소스 코드 레포지토리에 자동으로 자주 통합하는 사례
