@@ -4,7 +4,9 @@ tags:
     - 스레드
     - 프로세스
 date: "2024-11-28"
+thumbnail: "https://velog.velcdn.com/images%2Fraejoonee%2Fpost%2Fb91490ed-c67b-407d-8fea-a8d6fdb22559%2F104.png"
 ---
+<a style="font-size:0.9rem" href="https://velog.io/@raejoonee/프로세스와-스레드의-차이">- 출처 : 프로세스와 스레드의 차이</a>
 
 ### 프로세스
 운영체제에서 생성되며, 메모리에 적재되어 실행되는 프로그램.
