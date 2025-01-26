@@ -4,12 +4,12 @@ tag:
     - firebase
     - rewrite
 date: "2025-01-26"
-thumbnail: "/assets/img/Project/FirebasProjcet/post-02/thumbnail.png"
+thumbnail: "/assets/img/Computer Science/WebApp/post-08/thumbnail.png"
 ---
 
 `firebase.json`은 간단히 말하면 firebase 설정파일이다.
-[해당 글](/Project/FirebaseProject/post-01.html)처럼 `firebase init`을 진행하면 아래와 같이 `firebase.json`이 생성된다.
-![Image1](/assets/img/Project/FirebasProjcet/post-02/thumbnail.png)
+[해당 글](/Computer Science/WebApp/post-08.html)처럼 `firebase init`을 진행하면 아래와 같이 `firebase.json`이 생성된다.
+![Image1](/assets/img/Computer Science/WebApp/post-08/thumbnail.png)
 
 - `hosting`이 최상위 key인 이유는, `firebase init`으로 세팅할 때 hosting 서비스로 프로젝트 시작을 선택했기 때문이다.
 - `public`은 어떤 폴더 기준으로 `firebase deploy`를 할 것인지 작성해주는 위치라고 생각하면 좋다.
