@@ -5,7 +5,7 @@ tag:
     - RAG
     - Fewshot
 date: "2024-12-07"
-thumbnail: "/assets/img/Project/LangChain/post-06/thumbnail.png"
+thumbnail: "/assets/img/DATA & AI/Natural Language Processing/post-07/thumbnail.png"
 ---
 
 **'프롬프트'**는 기본적으로 ***언어 모델에 사용할 질문이나 명령을 생성하는 과정***이다.

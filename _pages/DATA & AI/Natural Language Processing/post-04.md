@@ -4,7 +4,7 @@ tag:
     - OpenAI
     - API
 date: "2024-12-07"
-thumbnail: "/assets/img/Project/LangChain/post-03/thumbnail.png"
+thumbnail: "/assets/img/DATA & AI/Natural Language Processing/post-04/thumbnail.png"
 ---
 
 단순히 어떤 식으로 사용하는지 등 [랭체인LangChain 노트](https://wikidocs.net/book/14314)의 'CH01' 에 있는 내용 그대로 따라하며 진행한 내용을 작성한다.

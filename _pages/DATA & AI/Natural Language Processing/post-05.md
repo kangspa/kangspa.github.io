@@ -4,7 +4,7 @@ tag:
     - LangChain
     - LCEL
 date: "2024-12-07"
-thumbnail: "/assets/img/Project/LangChain/post-04/thumbnail.png"
+thumbnail: "/assets/img/DATA & AI/Natural Language Processing/post-05/thumbnail.png"
 ---
 
 `LCEL` 이란, LangChain을 쉽게 구성할 수 있도록 도와주는 '선언적 언어'라고 한다.

@@ -5,7 +5,7 @@ tag:
     - LangSmith
     - API
 date: "2024-12-07"
-thumbnail: "/assets/img/Project/LangChain/post-02/thumbnail.png"
+thumbnail: "/assets/img/DATA & AI/Natural Language Processing/post-03/thumbnail.png"
 ---
 
 `LangChain`은 LLM 모델에 여러 기능 추가를 좀 더 쉽게 해줄 수 있게 만들어주는 프레임워크이다.
@@ -15,7 +15,7 @@ thumbnail: "/assets/img/Project/LangChain/post-02/thumbnail.png"
 
 [`ChatGPT`](https://chatgpt.com/) 로 접속하는게 아니라, [`OpenAI`](https://platform.openai.com/) 사이트로 접속하면 회원가입 후 로그인하여 API 키를 발급받을 수 있다.
 
-![Image1](/assets/img/Project/LangChain/post-02/1.png)
+![Image1](/assets/img/DATA & AI/Natural Language Processing/post-03/1.png)
 1. 로그인까지 끝냈다면, 좌측 위의 '톱니바퀴'를 눌러 페이지를 이동한다.
 2. 좌측에서 'Billing' 페이지로 이동해준다.
 3. 'Payment method'를 클릭하여 결제 수단을 등록해준다.
@@ -28,7 +28,7 @@ thumbnail: "/assets/img/Project/LangChain/post-02/thumbnail.png"
 
 결제 수단 등록이 끝났다면 진행에 문제는 없으나, 서비스가 아니라 실습 용도라면, 그리고 본인 지갑 사정을 생각한다면 Limit을 정해주는게 좋을 것이다.
 
-![Image2](/assets/img/Project/LangChain/post-02/2.png)
+![Image2](/assets/img/DATA & AI/Natural Language Processing/post-03/2.png)
 1. 'Limits' 페이지로 이동해준다.
 2. 'Set a Budget Alert' 금액을 설정하여, 현재 사용 금액이 얼마가 되었을 때 메일로 알림을 줄 것인지 설정해준다.
 3. 'Enable Budget Limit' 금액을 설정하여, 현재 사용 금액이 얼마가 되었을 때 API 요청이 거부되도록 할 것인지 설정해준다.
@@ -43,10 +43,10 @@ thumbnail: "/assets/img/Project/LangChain/post-02/thumbnail.png"
 
 설정이 끝났다면, 이제 사용하기 위한 API 키를 발급받아야합니다.
 
-![Image3](/assets/img/Project/LangChain/post-02/3.png)
+![Image3](/assets/img/DATA & AI/Natural Language Processing/post-03/3.png)
 1. 'API keys' 페이지로 이동한다.
 2. 'Create new secret key'를 눌러, API 키 발급을 시작한다.
-![Image4](/assets/img/Project/LangChain/post-02/4.png)
+![Image4](/assets/img/DATA & AI/Natural Language Processing/post-03/4.png)
 3. 발급받을 키의 이름을 지정한다.
 4. 해당 키를 사용할 'Project'를 지정해준다.
 5. 'Create secret key'를 통해 API 키 발급을 받는다.
@@ -62,10 +62,10 @@ LangSmith는 LLM 애플레이션 개발에 있어 다양한 추적 기능을 제
 간단히 얼마만큼의 토큰을 사용했는지, 어떤 에러가 발생했는지 등을 확인하게 도와준다고 생각하면 좋다.
 [`LangSmith`](https://smith.langchain.com/) 사이트에 접속하여 회원가입 후 이메일 인증을 우선 진행해줘야 한다.
 
-![Image5](/assets/img/Project/LangChain/post-02/5.png)
+![Image5](/assets/img/DATA & AI/Natural Language Processing/post-03/5.png)
 인증까지 끝나면, 좌측 배너에서 톱니바퀴를 눌러 개인 페이지로 이동해준다.
 
-![Image6](/assets/img/Project/LangChain/post-02/6.png)
+![Image6](/assets/img/DATA & AI/Natural Language Processing/post-03/6.png)
 가운데에서 'Personal' 클릭 후, 좌측 위의 'Create API Key'를 통해 개인 키를 발급받으면 된다.
 
 OpenAI API 키 발급받을 때처럼, 해당 키도 복사 후 `.env`에 저장해주면 된다.

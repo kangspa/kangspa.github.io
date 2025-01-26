@@ -5,7 +5,7 @@ tag:
     - env
     - poetry
 date: "2024-12-06"
-thumbnail: "/assets/img/Project/LangChain/post-01/thumbnail.png"
+thumbnail: "/assets/img/Computer Science/Development/post-03/thumbnail.png"
 ---
 
 [랭체인LangChain 노트](https://wikidocs.net/book/14314) 실습 시작을 위해 [테디노트님의 랭체인 깃허브](https://github.com/teddylee777/langchain-kr)에서 레포지토리를 fork 하고 설치하려고 보면, `poetry`로 가상환경을 구성하는 것을 볼 수 있다.
@@ -43,7 +43,7 @@ thumbnail: "/assets/img/Project/LangChain/post-01/thumbnail.png"
     ```
 2. poetry의 `PATH` 설정을 해준다.
     **환경 변수** 설정을 들어가서, `사용자 환경 변수` 에 `%APPDATA%\Python\Scripts` 를 추가해준다.
-    ![Image1](/assets/img/Project/LangChain/post-01/1.png)
+    ![Image1](/assets/img/Computer Science/Development/post-03/1.png)
 
 3. 이후 `powershell` 종료 후 다시 열면, `poetry --version`으로 버전이 나오는 것을 볼 수 있다.
     필자는 이 때부터 커맨드 터미널에서도 `poetry` 명령어 사용이 가능했던 것으로 기억한다.

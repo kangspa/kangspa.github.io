@@ -4,7 +4,7 @@ tag:
     - parser
     - LangChain
 date: "2024-12-08"
-thumbnail: "/assets/img/Project/LangChain/post-07/thumbnail.png"
+thumbnail: "/assets/img/DATA & AI/Natural Language Processing/post-08/thumbnail.png"
 ---
 
 출력 파서는, LangChain에서 언어 모델(LLM)이 출력한 내용을 구조화된 형태로 변환하는 컴포넌트이다.
