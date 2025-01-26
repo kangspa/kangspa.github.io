@@ -5,7 +5,7 @@ tags:
     - satellite
     - 시간 단축
 date: "2024-11-17"
-thumbnail: "/assets/img/Project/GitBlog/post-05/thumbnail.png"
+thumbnail: "/assets/img/Computer Science/WebApp/post-05/thumbnail.png"
 ---
 
 해당 테마는 다 좋았지만, 각 카테고리 넘어갈 때마다 로딩 화면이 나오고, 심지어 로딩 애니메이션이 갖는 시간이 길다는 점이 불편했다.
@@ -48,4 +48,4 @@ window.addEventListener("load", () => {
 
 추가로 로딩 애니메이션 자체를 없애려면, `_layouts/page.html` 파일의 `.inner-content` 요소에서 `include loading.html` 부분을 주석처리해주면 된다.
 다만 모든 로딩 애니메이션이 사라져서 좀 밋밋하기에, 필자는 주석처리를 하진 않았다.
-![Image](/assets/img/Project/GitBlog/post-05/image.png)
+![Image](/assets/img/Computer Science/WebApp/post-05/image.png)

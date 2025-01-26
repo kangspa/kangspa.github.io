@@ -18,25 +18,25 @@ thumbnail: "https://i.ibb.co/V9j2Qsg/giscus-Wl0-X3byd-az-U68-1.webp"
 
 1. 현재 만들어둔 블로그 레포지토리(`username`.github.io)의
 `Settings`→`General`→`Features` 에서 `Discussions`를 체크해준다.
-![Image1](/assets/img/Project/GitBlog/post-03/1.png)
+![Image1](/assets/img/Computer Science/WebApp/post-03/1.png)
 
 2. 현재 만들어둔 블로그 레포지토리(`username`.github.io)에 [Giscus](https://github.com/apps/giscus)를 설치해준다.
-![Image2](/assets/img/Project/GitBlog/post-03/2.png)
-![Image3](/assets/img/Project/GitBlog/post-03/3.png)
+![Image2](/assets/img/Computer Science/WebApp/post-03/2.png)
+![Image3](/assets/img/Computer Science/WebApp/post-03/3.png)
 스크린샷 촬영한 계정은 깡통계정이라 레포지토리가 없어서 `All repositories`만 나오는 것 같은데, `username`.github.io 로 레포지토리 만들었다면 선택 가능하다.
 물론 그냥 `All repositories`로 해도 지장은 없을 것 같다.
 
 3. [Giscus Guide](https://giscus.app/ko)에 접속해서, 자신의 저장소(`username`.github.io)를 입력해준다.
 지금까지 진행한 모든 단계는 사실 해당 가이드라인에 잘 나와있다.
-![Image4](/assets/img/Project/GitBlog/post-03/4.png)
+![Image4](/assets/img/Computer Science/WebApp/post-03/4.png)
 
 4. `Discussion 카테고리`를 `Q&A`로 설정해준다.
-![Image5](/assets/img/Project/GitBlog/post-03/5.png)
+![Image5](/assets/img/Computer Science/WebApp/post-03/5.png)
 
 5. 하단에 생성된 `giscus script`의 값 일부를 `_config.yml`에 복사해서 넣는다.
 위에서부터 순서대로 작성해주면 된다.
-![Image6](/assets/img/Project/GitBlog/post-03/6.png)
-![Image7](/assets/img/Project/GitBlog/post-03/7.png)
+![Image6](/assets/img/Computer Science/WebApp/post-03/6.png)
+![Image7](/assets/img/Computer Science/WebApp/post-03/7.png)
 
 이렇게 하면 Giscus를 활용해서 Github 블로그에 댓글 만드는 건 끝났는데, 실제로 되는지는 해당 포스팅 하단에 댓글 달고 확인해봐야 할 것 같다. → 이상없이 Discussions에 작성되는 것 확인 완료!
 기본적으로 Github 레포지토리의 discussions에 의견을 남기는 형식인만큼, 댓글을 남기려면 Github에 로그인해야 가능하다.
@@ -48,7 +48,7 @@ thumbnail: "https://i.ibb.co/V9j2Qsg/giscus-Wl0-X3byd-az-U68-1.webp"
 이건 워낙 간단해서..여기 같이 쓰는 것도 있다.
 
 1. [GoatCounter 회원가입](https://www.goatcounter.com/signup)을 일단 진행한다.
-![Image8](/assets/img/Project/GitBlog/post-03/8.png)
+![Image8](/assets/img/Computer Science/WebApp/post-03/8.png)
     - Code : goatcounter 대시보드에 접속할 일종의 아이디?
     - Site domain : 방문자 수 확인할 도메인 주소
     - Email address : goatcounter 가입 이메일 주소
@@ -57,13 +57,13 @@ thumbnail: "https://i.ibb.co/V9j2Qsg/giscus-Wl0-X3byd-az-U68-1.webp"
 
 2. 가입한 이메일로 수신한 확인용 링크를 클릭하면 가입완료된다.
 필자는 스팸메일함에 있는줄 모르고 왜 가입이 안되나 헤맸다.
-![Image9](/assets/img/Project/GitBlog/post-03/9.png)
+![Image9](/assets/img/Computer Science/WebApp/post-03/9.png)
 
 3. `Setting`로 이동해서 `Allow adding visitor counts on your website`를 체크해준다.
-![Image10](/assets/img/Project/GitBlog/post-03/10.png)
+![Image10](/assets/img/Computer Science/WebApp/post-03/10.png)
 
 4. 가입할 때 작성한 `Code`값을 `_config.yml`의 `goatcounter_code` 값으로 넣어준다.
-![Image11](/assets/img/Project/GitBlog/post-03/11.png)
+![Image11](/assets/img/Computer Science/WebApp/post-03/11.png)
 
 이렇게 하면 끝...
 추가로 `Setting`에서 특정IP는 방문자수 체크에 무시할 수 있는데, `Add your current IP` 클릭하면 현재 접속해있는 IP값 그대로 넣을 수 있다.
@@ -71,4 +71,4 @@ thumbnail: "https://i.ibb.co/V9j2Qsg/giscus-Wl0-X3byd-az-U68-1.webp"
 추가로 `Data Collection` 탭의 `Region`에 한국 코드가 없기에 KR만 추가해줌으로써 해당 세팅은 끝냈다.
 
 아마 각 포스팅별 조회수를 보여주기 위한 연동 시스템인 것 같다.
-![Image12](/assets/img/Project/GitBlog/post-03/12.png)
+![Image12](/assets/img/Computer Science/WebApp/post-03/12.png)
