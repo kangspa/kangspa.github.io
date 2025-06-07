@@ -5,7 +5,7 @@ tag:
     - LCEL
     - Runnable
 date: "2024-12-07"
-thumbnail: "/assets/img/DATA & AI/Natural Language Processing/post-06/thumbnail.png"
+thumbnail: "/assets/img/thumbnail/empty.jpg"
 ---
 
 `LCEL`을 `Runnable` 프로토콜을 통해 좀 더 쉽게 사용하도록 구현했다고 하는데, 어떤 `Runnable`이 있는지 알아보자.
