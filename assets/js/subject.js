@@ -79,11 +79,6 @@ document.addEventListener('DOMContentLoaded', function(){
             }
         };
 
-        // iframe으로부터 메세지 수신받는거 해결을 위한 코드
-        window.addEventListener('message', (e) => {
-            console.log('📩 message received in iframe:', e.data);
-        });
-
         const setCurrentPage = (pageNum) => {
             currentPage = pageNum;
             
@@ -104,6 +99,12 @@ document.addEventListener('DOMContentLoaded', function(){
             window.scrollTo({top:0});
             localStorage.setItem(pageKey, currentPage);
         };
+
+        // iframe으로부터 메세지 수신받는거 해결을 위한 코드
+        window.addEventListener('message', (e) => {
+            if (e.data === "click-prev") setCurrentPage(currentPage - 1);
+            else if (e.data === "click-next") setCurrentPage(currentPage + 1);
+        });
 
         window.addEventListener("load", (event) => {
             // Load last visited page number
