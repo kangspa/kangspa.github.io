@@ -102,8 +102,12 @@ document.addEventListener('DOMContentLoaded', function(){
 
         // iframe으로부터 메세지 수신받는거 해결을 위한 코드
         window.addEventListener('message', (e) => {
-            if (e.data === "click-prev") setCurrentPage(currentPage - 1);
-            else if (e.data === "click-next") setCurrentPage(currentPage + 1);
+            if (e.data === "click-prev") {
+                if (currentPage !== 1) setCurrentPage(currentPage - 1);
+            }
+            else if (e.data === "click-next") {
+                if (pageCount !== currentPage) setCurrentPage(currentPage + 1);
+            }
         });
 
         window.addEventListener("load", (event) => {
