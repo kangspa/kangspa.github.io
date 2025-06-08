@@ -79,6 +79,11 @@ document.addEventListener('DOMContentLoaded', function(){
             }
         };
 
+        // iframe으로부터 메세지 수신받는거 해결을 위한 코드
+        window.addEventListener('message', (e) => {
+            console.log('📩 message received in iframe:', e.data);
+        });
+
         const setCurrentPage = (pageNum) => {
             currentPage = pageNum;
             

@@ -1,9 +1,5 @@
 var baseurl = document.querySelector('meta[name="baseurl"]').content;
 
-window.addEventListener('message', (e) => {
-    console.log('📩 message received in iframe:', e.data);
-});
-
 document.addEventListener('DOMContentLoaded', function(){
     // Init theme
     let currentTheme = localStorage.getItem('theme');
