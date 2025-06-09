@@ -1,5 +1,12 @@
 var baseurl = document.querySelector('meta[name="baseurl"]').content;
 
+// iframe으로부터 메세지 수신받는거 해결을 위한 코드
+window.addEventListener('message', (e) => {
+    if (e.data === "go-back") {
+        history.back();
+    }
+});
+
 document.addEventListener('DOMContentLoaded', function(){
     // Init theme
     let currentTheme = localStorage.getItem('theme');
