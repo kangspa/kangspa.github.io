@@ -2,9 +2,9 @@ var baseurl = document.querySelector('meta[name="baseurl"]').content;
 
 // iframe으로부터 메세지 수신받는거 해결을 위한 코드
 window.addEventListener('message', (e) => {
-    if (e.data === "go-back") {
-        history.back();
-    }
+    if (e.data === "go-back") history.back();
+    else if (e.data === "scroll-up") window.scrollBy({ top: -100, behavior: 'smooth' });
+    else if (e.data === "scroll-down") window.scrollBy({ top: 100, behavior: 'smooth' });
 });
 
 document.addEventListener('DOMContentLoaded', function(){
