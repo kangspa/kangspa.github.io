@@ -114,7 +114,7 @@ document.addEventListener('DOMContentLoaded', function(){
             // Load last visited page number
             if (event.persisted 
             || (window.performance && window.performance.navigation.type == 2)) {
-                currentPage = localStorage.getItem(pageKey);
+                currentPage = Number(localStorage.getItem(pageKey));
             }
 
             getPaginationNumbers();
