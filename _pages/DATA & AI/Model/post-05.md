@@ -1,3 +1,9 @@
+'''
+https://github.com/tunz/transformer-pytorch/blob/e7266679f0b32fd99135ea617213f986ceede056/model/transformer.py#L201
+https://docs.pytorch.org/docs/stable/generated/torch.nn.Transformer.html#transformer
+https://arxiv.org/html/1706.03762v7
+'''
+
 ["Attention Is All You Need"](https://arxiv.org/html/1706.03762v7) 논문 내용 리뷰 및 정리한다.
 
 # 3 Model Architecture

@@ -75,7 +75,7 @@ npm create vite
 
 JSX 문법 사용이 가능해서, 아래와 같이 특정 요소를 반복문 등을 통해 한번에 로드하고 추가할 수 있다.
 
-```tsx
+```text
 <div className="frame-table">
     {allFrames.map((frame, i) => (
     <div className="frame-row" key={i}>
@@ -94,7 +94,7 @@ Phaser 게임을 로드할 요소를 `<Game onPipeEnter={handlePipeEnter} />` �
 아래 내용은 컴포넌트가 처음 렌더링될 때 한번 실행해주기 위해 작성되었다.
 만약 []에 다른 함수 등이 들어가 있다면, 해당 값에 따라 작동 시기가 변경된다.
 
-```tsx
+```text
 useEffect(() => {
   if (iframeRef.current) iframeRef.current.src = TARGET_URL;
 }, []);
@@ -106,7 +106,7 @@ Phaser 초기화를 위해 작성된 파일로, 게임 scene 부분과 `App.tsx`
 `App.tsx`의 `<Game onPipeEnter={handlePipeEnter} />`에서 봤듯이, `onPipeEnter` 라는 값을 받아오는 것을 볼 수 있다.
 그래서 해당 파일에서는 처음에 아래와 같이 작성해줌으로써, `onPipeEnter` 값을 받아온다.
 
-```tsx
+```text
 type GameProps = {
   onPipeEnter?: (url: string) => void;
 };
@@ -366,7 +366,7 @@ if (this.cursors.down?.isDown && body.blocked.down) {
 또한 iframe은 원래 직접 조작도 가능한데, 해당 페이지에서는 iframe을 직접 조작하면 변수 값들이 꼬일 수가 있으므로 게임으로만 조작해야 됐다.
 그래서 `.iframe-overlay` 요소를 iframe과 같이 뒀는데, 이를 투명화시켜 직접 마우스로 iframe 요소를 조작하지 못하게 하였다.
 
-```tsx
+```text
 <div className="iframe-wrapper" style={{ marginTop: '2rem', position: 'relative', width: '800px', height: '500px' }}>
     <iframe
     id="browser"
