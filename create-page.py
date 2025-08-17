@@ -4,7 +4,7 @@ from urllib.parse import urlparse
 from datetime import date
 from pathlib import Path
 
-url = ""
+url = "https://www.acmicpc.net/problem/14888"
 if not url.startswith("https"): url = "https://" + url
 
 headers = {'User-Agent' : 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36'}
@@ -18,18 +18,20 @@ with open("test.html", "w", encoding="utf-8") as f:
 today = date.today().strftime("%Y-%m-%d")
 if urlparse(url).netloc == "www.acmicpc.net":
     directory = "Baekjoon"
+    url_id = url.rstrip("/").split("/")[-1]
     title = soup.select_one("#problem_title").text.strip()
     title = title.replace("/", "⧸").replace("|", "｜").replace(":", "：").replace("?", "？").replace("*", "＊").replace('"', "＂").replace("<", "＜").replace(">", "＞")  # 특수문자 제거
     tags = [tag.text.strip() for tag in soup.select("#problem-info td") if tag.text.strip().endswith("초") or tag.text.strip().endswith("MB") or tag.text.strip().endswith("%")]
     description = soup.select_one("#problem-body").decode_contents()
 elif urlparse(url).netloc == "school.programmers.co.kr":
     directory = "Programmers"
+    url_id = url.rstrip("/").split("/")[-1]
     title = soup.select_one(".challenge-title").text.strip()
     title = title.replace("/", "⧸").replace("|", "｜").replace(":", "：").replace("?", "？").replace("*", "＊").replace('"', "＂").replace("<", "＜").replace(">", "＞")  # 특수문자 제거
     tags = [tag.text.strip() for tag in soup.select(".dropdown-language .dropdown-item")]
     description = soup.select_one(".guide-section-description").decode_contents()
 
-with open(f"_pages/{directory}/{title}.md", "w", encoding="utf-8") as f:
+with open(f"_pages/{directory}/{url_id}.md", "w", encoding="utf-8") as f:
     f.write("---\n")
     f.write(f"title: \"{title}\"\n")
     f.write("tags:\n")
@@ -41,7 +43,7 @@ with open(f"_pages/{directory}/{title}.md", "w", encoding="utf-8") as f:
     f.write("<details>\n")
     f.write("<summary><b>Solution</b></summary>\n\n")
     folder = Path(f"_pages/{directory}/code")
-    files = [f for f in folder.iterdir() if f.is_file() and f.name.startswith(title)]
+    files = [f for f in folder.iterdir() if f.is_file() and f.name.startswith(url_id)]
     for file in files:
         with open(file, "r", encoding="utf-8") as code_file:
             code_content = code_file.read()
