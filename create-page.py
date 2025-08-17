@@ -4,7 +4,7 @@ from urllib.parse import urlparse
 from datetime import date
 from pathlib import Path
 
-url = "https://www.acmicpc.net/problem/14888"
+url = "https://school.programmers.co.kr/learn/courses/30/lessons/250134"
 if not url.startswith("https"): url = "https://" + url
 
 headers = {'User-Agent' : 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36'}
@@ -20,14 +20,12 @@ if urlparse(url).netloc == "www.acmicpc.net":
     directory = "Baekjoon"
     url_id = url.rstrip("/").split("/")[-1]
     title = soup.select_one("#problem_title").text.strip()
-    title = title.replace("/", "⧸").replace("|", "｜").replace(":", "：").replace("?", "？").replace("*", "＊").replace('"', "＂").replace("<", "＜").replace(">", "＞")  # 특수문자 제거
     tags = [tag.text.strip() for tag in soup.select("#problem-info td") if tag.text.strip().endswith("초") or tag.text.strip().endswith("MB") or tag.text.strip().endswith("%")]
     description = soup.select_one("#problem-body").decode_contents()
 elif urlparse(url).netloc == "school.programmers.co.kr":
     directory = "Programmers"
     url_id = url.rstrip("/").split("/")[-1]
     title = soup.select_one(".challenge-title").text.strip()
-    title = title.replace("/", "⧸").replace("|", "｜").replace(":", "：").replace("?", "？").replace("*", "＊").replace('"', "＂").replace("<", "＜").replace(">", "＞")  # 특수문자 제거
     tags = [tag.text.strip() for tag in soup.select(".dropdown-language .dropdown-item")]
     description = soup.select_one(".guide-section-description").decode_contents()
 
