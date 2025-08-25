@@ -4,7 +4,7 @@ from urllib.parse import urlparse
 from datetime import date
 from pathlib import Path
 
-url = "https://school.programmers.co.kr/learn/courses/30/lessons/250134"
+url = "https://www.acmicpc.net/problem/7785"
 if not url.startswith("https"): url = "https://" + url
 
 headers = {'User-Agent' : 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36'}

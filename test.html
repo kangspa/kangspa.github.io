@@ -1,710 +1,1526 @@
 <!DOCTYPE html>
-<html class="" lang="ko" translate="" xml:lang="ko" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="ko">
  <head>
+  <title>
+   7785번: 회사에 있는 사람
+  </title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
   <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
-   <meta content="ie=edge" http-equiv="x-ua-compatible"/>
-   <meta content="코딩테스트 연습 - [PCCP 기출문제] 4번 / 수레 움직이기" itemprop="title name" name="twitter:title" property="og:title"/>
-   <meta content="코딩테스트 연습 - [PCCP 기출문제] 4번 / 수레 움직이기" itemprop="title name" name="og:title" property="og:title"/>
-   <meta content="알고리즘 문제 연습 카카오톡 친구해요! 프로그래머스 교육 카카오 채널을 만들었어요. 여기를 눌러, 친구 추가를 해주세요. 신규 교육 과정 소식은 물론 다양한 이벤트 소식을 가장 먼저 알려드립니다." itemprop="description" name="twitter:description" property="og:description"/>
-   <meta content="알고리즘 문제 연습 카카오톡 친구해요! 프로그래머스 교육 카카오 채널을 만들었어요. 여기를 눌러, 친구 추가를 해주세요. 신규 교육 과정 소식은 물론 다양한 이벤트 소식을 가장 먼저 알려드립니다." itemprop="description" name="og:description" property="og:description"/>
-   <meta content="https://image.freepik.com/free-vector/landing-page-template-for-a-website_23-2147782747.jpg" itemprop="image primaryImageOfPage" name="twitter:image" property="og:image"/>
-   <meta content="https://image.freepik.com/free-vector/landing-page-template-for-a-website_23-2147782747.jpg" itemprop="image primaryImageOfPage" name="og:image" property="og:image"/>
-   <meta content="https://programmers.co.kr/" name="twitter:url" property="og:url"/>
-   <meta content="https://programmers.co.kr/" name="og:url" property="og:url"/>
-   <meta charset="utf-8"/>
-   <title>
-    코딩테스트 연습 - [PCCP 기출문제] 4번 / 수레 움직이기 | 프로그래머스 스쿨
-   </title>
-   <link href="https://school.programmers.co.kr/assets/icons/favicon-ec61d910396b5fc4d7418ea44281693172c34e31d437d074f9ab5470523990fb.png" rel="shortcut icon" type="image/x-icon"/>
-   <link href="https://school.programmers.co.kr/assets/icons/apple-icon-8a32ac937e12475676c7102e99d34b7f908b3d1ac048d6eed0712ad111bfdd01.png" rel="apple-touch-icon" type="image/png"/>
-   <meta content="알고리즘 문제 연습 카카오톡 친구해요! 프로그래머스 교육 카카오 채널을 만들었어요. 여기를 눌러, 친구 추가를 해주세요. 신규 교육 과정 소식은 물론 다양한 이벤트 소식을 가장 먼저 알려드립니다." name="description"/>
-   <meta content="코딩 교육, 코딩, 프로그래밍, 실습, 생활코딩, 알고리즘, c, 영상/실습 강의, 추천 강의" name="keywords"/>
-   <meta content="339079816467879" property="fb:app_id"/>
-   <meta content="website" property="og:type"/>
-   <meta content="프로그래머스 스쿨" property="og:site_name"/>
-   <meta content="ko_KR" property="og:locale"/>
-   <meta content="summary" name="twitter:card"/>
-   <meta content="https://image.freepik.com/free-vector/landing-page-template-for-a-website_23-2147782747.jpg" name="image"/>
-   <meta content="authenticity_token" name="csrf-param">
-    <meta content="PQuSTbryxuGTVTwG-FBgko00mOQRPX5g4LBs44VoMR3ZC0zqxwaW09WRh_hXxYIGTE5Uya5ZKmtiSvB3zwpKOg" name="csrf-token">
-     <meta content="wss://ws.programmers.co.kr:443/cable" name="action-cable-url">
-      <script charset="utf-8" type="text/javascript">
-       window.__env__ = {
-  STAGE: 'production',
-  SITE: 'programmers',
-  SENTRY_DSN: 'https://96f9fc1ff3f44acbb98a9c156338d14b@o1070092.ingest.sentry.io/6136918',
-  HACKLE_BROWSER_KEY: 'OKQUz9iLXiTPyzwOAyq44sT4uwMqfCzz',
-  HACKLE_EVENT_SERVER_INIT: true, // 핵클 초기화 코드 이전을 위한 임시 플래그 배포 후 삭제 예정
-  HERA_CLIENT_HOST: 'https://d1nuzc1w51n1es.cloudfront.net',
-  PROGRAMMERS_HOST: 'programmers.co.kr',
-  BUSINESS_HOST: 'business.programmers.co.kr',
-  SCHOOL_HOST: 'school.programmers.co.kr',
-  INSTRUCTOR_SCHOOL_HOST: 'instructor.school.programmers.co.kr',
-  CAREER_HOST: 'career.programmers.co.kr',
-  CAMPUS_HOST: 'campus.programmers.co.kr',
-  PROGRAMMERS_WS_HOST: 'ws.programmers.co.kr',
-  COMMUNITY_HOST: 'community.programmers.co.kr',
-  QNA_HOST: 'qna.programmers.co.kr',
-  IS_PROGRAMMERS_APP_REQUEST: false,
-};
-      </script>
-      <script data-internal-account="" data-user-id="" id="__hackle-init-info">
-      </script>
-      <script src="/assets/hackle_event_initializer-2decc783baaed7cdfba6b3ba315d282eaf5eb75f3565979fc7d54934bef78a4f.js">
-      </script>
-      <link debug="false" href="/assets/library-05704bb25291ce17972d22267cf938317aa9808756330022d3fa676cf1e0ced1.css" media="all" rel="stylesheet">
-       <link href="/assets/application-5cd6760a753217e2a04d3facf5d7fd592777e7c94679a472da32f2c0f35a1a47.css" media="all" rel="stylesheet">
-        <link href="/assets/school-7277c1ff5f66ff6ef031e0bf62a5c4e3df15b5903882560b1642ad4c793b9f2b.css" media="all" rel="stylesheet"/>
-        <meta content="Z9qZz155KQLu77llc1wF4LlccJE88dymkeGyw1I62JY" name="google-site-verification">
-         <!-- Google Tag Manager -->
-         <script>
-          (function (w, d, s, l, i) {
-  w[l] = w[l] || [];
-  w[l].push({
-    'gtm.start':
-      new Date().getTime(), event: 'gtm.js'
-  });
-  var f = d.getElementsByTagName(s)[0],
-    j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
-  j.async = true;
-  j.src =
-    'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-  f.parentNode.insertBefore(j, f);
-})(window, document, 'script', 'dataLayer', 'GTM-NT8HLJD');
-         </script>
-         <!-- End Google Tag Manager -->
-        </meta>
-       </link>
-      </link>
-     </meta>
-    </meta>
-   </meta>
-  </meta>
- </head>
- <body class="learn-lessons learn-lessons-show" data-action="show" data-controller="lessons" data-defaultlocale="ko" data-locale="ko" data-ns="Learn" data-signed-in="false">
-  <div class="navbar navbar-dark navbar-expand-lg navbar-application navbar-breadcrumb">
-   <a class="navbar-brand" href="/">
-    <img alt="logo" src="/assets/bi-symbol-light-4a9edc980025418d6883d7519df4acf2b6c65f068508931dff0881d1c5ad4721.png" width="24"/>
-   </a>
-   <ol class="breadcrumb">
-    <li>
-     <a href="/learn/challenges">
-      코딩테스트 연습
-     </a>
-    </li>
-    <li>
-     <a href="/learn/challenges">
-      PCCP 기출문제
-     </a>
-    </li>
-    <li class="active">
-     [PCCP 기출문제] 4번 / 수레 움직이기
-    </li>
-   </ol>
-   <div class="navbar-collapse collapse">
-    <ul class="nav navbar-nav ml-auto">
-     <li class="nav-item">
-      <a class="nav-link" href="#" id="help" onclick="Learn.lessons.challengeable.startTour(true)">
-       도움말
-      </a>
-     </li>
-     <li class="nav-item">
-      <a class="nav-link" data-remote="true" href="/compile_options">
-       컴파일 옵션
-      </a>
-     </li>
-    </ul>
-   </div>
-  </div>
-  <div class="main theme-dark">
-   <script defer="defer" src="https://d1nuzc1w51n1es.cloudfront.net/c26640333b09c597829f.js">
-   </script>
-   <div class="lesson-content" data-challenge-category="algorithm" data-challenge-level="3" data-course-category="open_challenge" data-course-id="30" data-course-slug="코딩테스트-연습" data-lesson-ai-commentable="false" data-lesson-id="250134" data-lesson-title="[PCCP 기출문제] 4번 / 수레 움직이기" data-lesson-type="Challenge" data-next-lesson-id="">
-    <div class="challenge-nav nav nav-tabs nav-tabs-dark task-tab" id="tab" role="tablist">
-     <div class="challenge-nav-left-menu">
-      <div class="algorithm-bookmarks" data-bookmarked="false">
-       <div class="icon-bookmark challenge-bookmark hidden" data-bookmarked="true" data-hackle-value='{"key":"open_challenge_lesson_bookmark_clicked","properties":{"course_id":30,"lesson_id":250134,"bookmarked":false}}' data-lesson-id="250134" data-original-title="즐겨찾기 해제" data-placement="top" data-toggle="tooltip" data-user-signed-in="false" id="challenge-bookmark-delete">
-        <svg class="ic-bookmark ic-24">
-         <use xlink:href="/assets/svg-defs-5f0c025eb292d6a07b7f64ec73138e812e32cff2aa62e22da4bad17d4a75395a.svg#ic-bookmark">
-         </use>
-        </svg>
-        <div class="hover-bg">
-        </div>
-       </div>
-       <div class="icon-bookmark challenge-bookmark" data-bookmarked="false" data-hackle-value='{"key":"open_challenge_lesson_bookmark_clicked","properties":{"course_id":30,"lesson_id":250134,"bookmarked":true}}' data-lesson-id="250134" data-original-title="먼저 로그인을 해주세요." data-placement="top" data-toggle="tooltip" data-user-signed-in="false" id="challenge-bookmark">
-        <svg class="ic-bookmark-border ic-24 icon-bookmark">
-         <use xlink:href="/assets/svg-defs-5f0c025eb292d6a07b7f64ec73138e812e32cff2aa62e22da4bad17d4a75395a.svg#ic-bookmark-border">
-         </use>
-        </svg>
-        <div class="hover-bg">
-        </div>
-       </div>
-      </div>
-      <div class="nav-item algorithm-nav-link algorithm-title">
-       <span class="challenge-title">
-        [PCCP 기출문제] 4번 / 수레 움직이기
-       </span>
-      </div>
-     </div>
-     <div class="challenge-nav-right-menu">
-      <div class="challenge-settings nav-item">
-       <div class="btn-group-theme btn-group btn-group-toggle" data-toggle="buttons">
-        <label class="btn btn-sm btn-outline-dark active">
-         <input autocomplete="off" checked="" data-theme="dark" data-toggle="button" name="themes" type="radio"/>
-         dark
-        </label>
-        <label class="btn btn-sm btn-outline-dark">
-         <input autocomplete="off" data-theme="light" data-toggle="button" name="themes" type="radio"/>
-         light
-        </label>
-       </div>
-       <div data-content="코드 에디터의 단축키를 설정하는 옵션입니다. 선호하는 에디터 옵션이 없다면 sublime을 선택해주세요." data-placement="bottom" data-toggle="popover" data-trigger="hover">
-        <div class="btn-group-keymap btn-group btn-group-toggle" data-toggle="buttons">
-         <label class="btn btn-sm btn-outline-dark active">
-          <input autocomplete="off" checked="" data-keymap="sublime" name="keymaps" type="radio"/>
-          sublime
-         </label>
-         <label class="btn btn-sm btn-outline-dark">
-          <input autocomplete="off" data-keymap="vim" name="keymaps" type="radio"/>
-          vim
-         </label>
-         <label class="btn btn-sm btn-outline-dark">
-          <input autocomplete="off" data-keymap="emacs" name="keymaps" type="radio"/>
-          emacs
-         </label>
-        </div>
-       </div>
-       <div class="dropdown-language" id="tour7">
-        <button class="btn btn-sm btn-dark dropdown-toggle" data-toggle="dropdown" type="button">
-         C
-        </button>
-        <div aria-labelledby="dropdownMenuButton" class="dropdown-menu dropdown-menu-right">
-         <a class="dropdown-item" href="/learn/courses/30/lessons/250134?language=c">
-          C
-         </a>
-         <a class="dropdown-item" href="/learn/courses/30/lessons/250134?language=cpp">
-          C++
-         </a>
-         <a class="dropdown-item" href="/learn/courses/30/lessons/250134?language=java">
-          Java
-         </a>
-         <a class="dropdown-item" href="/learn/courses/30/lessons/250134?language=javascript">
-          JavaScript
-         </a>
-         <a class="dropdown-item" href="/learn/courses/30/lessons/250134?language=python3">
-          Python3
-         </a>
-        </div>
-       </div>
-       <div class="connection-box connection-status disconnected js-connection-status-alert">
-        <svg class="ic-18">
-         <use xlink:href="/assets/svg-defs-5f0c025eb292d6a07b7f64ec73138e812e32cff2aa62e22da4bad17d4a75395a.svg#ic-power-off">
-         </use>
-        </svg>
-        <span class="connection-status-txt">
-         네트워크 연결 끊김
-        </span>
-       </div>
-      </div>
-     </div>
-    </div>
-    <div class="challenge-content lesson-algorithm-main-section" data-algorithm-type="standard" data-challengeable-id="20182" data-challengeable-type="algorithm" data-interface-type="function" data-is-lesson="true" data-language="c" data-lesson-comment-activation-score="30" data-user-id="">
-     <div data-hackle-view='{"key":"school_lesson_challenge_viewed","properties":{"course_id":30,"challenge_title":"[PCCP 기출문제] 4번 / 수레 움직이기","challenge_level":3,"challenge_category":"algorithm"}}'>
-     </div>
-     <div class="main-section tab-content">
-      <div class="guide-section">
-       <div class="tab-pane fade active show" id="tour2">
-        <div class="guide-section-description">
-         <h6 class="guide-section-title">
-          문제 설명
-         </h6>
-         <div class="markdown solarized-dark">
-          <p>
-           <code>
-            n
-           </code>
-           x
-           <code>
-            m
-           </code>
-           크기 격자 모양의 퍼즐판이 주어집니다.
-          </p>
-          <p>
-           퍼즐판에는 빨간색 수레와 파란색 수레가 하나씩 존재합니다. 각 수레들은 자신의 시작 칸에서부터 자신의 도착 칸까지 이동해야 합니다.
-           <br/>
-           모든 수레들을 각자의 도착 칸으로 이동시키면 퍼즐을 풀 수 있습니다.
-          </p>
-          <p>
-           당신은 각 턴마다
-           <strong>
-            반드시 모든 수레를 상하좌우로 인접한 칸 중 한 칸으로 움직여야 합니다.
-           </strong>
-           단, 수레를 움직일 때는 아래와 같은 규칙이 있습니다.
-          </p>
-          <ul>
-           <li>
-            수레는 벽이나 격자 판 밖으로 움직일 수 없습니다.
-           </li>
-           <li>
-            수레는 자신이 방문했던 칸으로 움직일 수 없습니다.
-           </li>
-           <li>
-            자신의 도착 칸에 위치한 수레는
-            <strong>
-             움직이지 않습니다.
-            </strong>
-            계속 해당 칸에 고정해 놓아야 합니다.
-           </li>
-           <li>
-            동시에 두 수레를 같은 칸으로 움직일 수 없습니다.
-           </li>
-           <li>
-            수레끼리 자리를 바꾸며 움직일 수 없습니다.
-           </li>
-          </ul>
-          <p>
-           예를 들어, 아래 그림처럼
-           <code>
-            n
-           </code>
-           = 3,
-           <code>
-            m
-           </code>
-           = 2인 퍼즐판이 있습니다.
-          </p>
-          <p>
-           <img alt="rb_horse1.jpg" src="https://grepp-programmers.s3.ap-northeast-2.amazonaws.com/files/production/2d21a258-144f-4d03-81c1-1a857a942efa/rb_horse1.jpg" title=""/>
-          </p>
-          <ul>
-           <li>
-            속이 빨간색인 원은 빨간색 수레를 나타냅니다.
-           </li>
-           <li>
-            속이 파란색인 원은 파란색 수레를 나타냅니다.
-           </li>
-           <li>
-            테두리가 빨간색인 원은 빨간색 수레의 도착 칸을 나타냅니다.
-           </li>
-           <li>
-            테두리가 파란색인 원은 파란색 수레의 도착 칸을 나타냅니다.
-           </li>
-          </ul>
-          <p>
-           위 퍼즐판은 아래와 같은 순서로 3턴만에 풀 수 있습니다.
-          </p>
-          <p>
-           <img alt="rb_horse2.jpg" src="https://grepp-programmers.s3.ap-northeast-2.amazonaws.com/files/production/e1c81aa3-238b-4f0e-b21d-697903543b72/rb_horse2.jpg" title=""/>
-          </p>
-          <ul>
-           <li>
-            빨간색 사선이 처진 칸은 빨간색 수레가 방문했던 칸을 나타냅니다. 규칙에 따라 빨간색 수레는 빨간색 사선이 처진 칸(방문했던 칸)으로는 이동할 수 없습니다.
-           </li>
-           <li>
-            파란색 사선이 처진 칸은 파란색 수레가 방문했던 칸을 나타냅니다. 규칙에 따라 파란색 수레는 파란색 사선이 처진 칸(방문했던 칸)으로는 이동할 수 없습니다.
-           </li>
-          </ul>
-          <p>
-           <img alt="rb_horse3.jpg" src="https://grepp-programmers.s3.ap-northeast-2.amazonaws.com/files/production/2b78f38c-121a-441c-90f9-704eb0642e96/rb_horse3.jpg" title=""/>
-          </p>
-          <ul>
-           <li>
-            위처럼 동시에 수레를 같은 칸으로 움직일 수는 없습니다.
-           </li>
-          </ul>
-          <p>
-           퍼즐판의 정보를 나타내는 2차원 정수 배열
-           <code>
-            maze
-           </code>
-           가 매개변수로 주어집니다. 퍼즐을 푸는데 필요한 턴의 최솟값을 return 하도록 solution 함수를 완성해 주세요. 퍼즐을 풀 수 없는 경우 0을 return 해주세요.
-          </p>
-          <hr/>
-          <h5>
-           제한사항
-          </h5>
-          <ul>
-           <li>
-            1 ≤
-            <code>
-             maze
-            </code>
-            의 길이 (= 세로 길이) ≤ 4
-            <ul>
-             <li>
-              1 ≤
-              <code>
-               maze[i]
-              </code>
-              의 길이 (= 가로 길이) ≤ 4
-             </li>
-             <li>
-              <code>
-               maze[i][j]
-              </code>
-              는 0,1,2,3,4,5 중 하나의 값을 갖습니다.
-             </li>
-            </ul>
-           </li>
-          </ul>
-          <table class="table">
-           <thead>
-            <tr>
-             <th>
-              <code>
-               maze[i][j]
-              </code>
-             </th>
-             <th>
-              의미
-             </th>
-            </tr>
-           </thead>
-           <tbody>
-            <tr>
-             <td>
-              0
-             </td>
-             <td>
-              빈칸
-             </td>
-            </tr>
-            <tr>
-             <td>
-              1
-             </td>
-             <td>
-              빨간 수레의 시작 칸
-             </td>
-            </tr>
-            <tr>
-             <td>
-              2
-             </td>
-             <td>
-              파란 수레의 시작 칸
-             </td>
-            </tr>
-            <tr>
-             <td>
-              3
-             </td>
-             <td>
-              빨간 수레의 도착 칸
-             </td>
-            </tr>
-            <tr>
-             <td>
-              4
-             </td>
-             <td>
-              파란 수레의 도착 칸
-             </td>
-            </tr>
-            <tr>
-             <td>
-              5
-             </td>
-             <td>
-              벽
-             </td>
-            </tr>
-           </tbody>
-          </table>
-          <ul>
-           <li>
-            빨간 수레의 시작 칸, 빨간 수레의 도착 칸, 파란 수레의 시작 칸, 파란 수레의 도착 칸은 퍼즐판에 1개씩 존재합니다.
-           </li>
-          </ul>
-          <hr/>
-          <h5>
-           입출력 예
-          </h5>
-          <table class="table">
-           <thead>
-            <tr>
-             <th>
-              maze
-             </th>
-             <th>
-              result
-             </th>
-            </tr>
-           </thead>
-           <tbody>
-            <tr>
-             <td>
-              [[1, 4], [0, 0], [2, 3]]
-             </td>
-             <td>
-              3
-             </td>
-            </tr>
-            <tr>
-             <td>
-              [[1, 0, 2], [0, 0, 0], [5, 0 ,5], [4, 0, 3]]
-             </td>
-             <td>
-              7
-             </td>
-            </tr>
-            <tr>
-             <td>
-              [[1, 5], [2, 5], [4, 5], [3, 5]]
-             </td>
-             <td>
-              0
-             </td>
-            </tr>
-            <tr>
-             <td>
-              [[4, 1, 2, 3]]
-             </td>
-             <td>
-              0
-             </td>
-            </tr>
-           </tbody>
-          </table>
-          <hr/>
-          <h5>
-           입출력 예 설명
-          </h5>
-          <p>
-           <strong>
-            입출력 예 #1
-           </strong>
-          </p>
-          <p>
-           문제 예시와 같습니다.
-          </p>
-          <p>
-           <strong>
-            입출력 예 #2
-           </strong>
-          </p>
-          <p>
-           <img alt="rb_horse4.jpg" src="https://grepp-programmers.s3.ap-northeast-2.amazonaws.com/files/production/54629429-3bec-4288-a7b4-6303c0929880/rb_horse4.jpg" title=""/>
-          </p>
-          <p>
-           7턴만에 퍼즐을 풀 수 있습니다. 다른 방법으로도 퍼즐을 풀 수 있지만 7턴보다 빠르게 풀 수는 없습니다.
-          </p>
-          <p>
-           <strong>
-            입출력 예 #3
-           </strong>
-          </p>
-          <p>
-           <img alt="rb_horse5.jpg" src="https://grepp-programmers.s3.ap-northeast-2.amazonaws.com/files/production/c6aed2ad-dbbf-477e-bac7-fd5cd44bad00/rb_horse5.jpg" title=""/>
-          </p>
-          <p>
-           다음 턴에 파란색 수레가 파란색 수레의 도착 칸에 위치한 후 고정되어 빨간색 수레가 빨간색 수레의 도착 칸에 도착할 수 없게 됩니다.
-           <br/>
-           퍼즐을 풀 수 없으므로 0을 return 해야 합니다.
-          </p>
-          <p>
-           <strong>
-            입출력 예 #4
-           </strong>
-          </p>
-          <p>
-           <img alt="rb_horse6.jpg" src="https://grepp-programmers.s3.ap-northeast-2.amazonaws.com/files/production/0ff7e955-77d6-4760-9e16-75cf2313fc0d/rb_horse6.jpg" title=""/>
-          </p>
-          <p>
-           수레는 서로 위치를 바꾸면서 움직일 수 없으므로 퍼즐을 풀 수 없습니다. 따라서 0을 return 해야 합니다.
-          </p>
-         </div>
-        </div>
-       </div>
-      </div>
-      <div class="run-section">
-       <div class="code-section" id="tour3" onkeyup="Hera.tryoutChallenges.resizeEditor(this);">
-        <div class="editor">
-         <ul class="nav nav-pills editor-nav-pills tap-form">
-          <input autocomplete="off" id="initial_code_70516" name="initial_code_70516" type="hidden" value="#include &lt;stdio.h&gt;
-#include &lt;stdbool.h&gt;
-#include &lt;stdlib.h&gt;
-
-// maze_rows는 2차원 배열 maze의 행 길이, maze_cols는 2차원 배열 maze의 열 길이입니다.
-int solution(int** maze, size_t maze_rows, size_t maze_cols) {
-    int answer = 0;
-    return answer;
-}">
-           <input data-language="c" data-type="code" id="70516" type="hidden" value="#include &lt;stdio.h&gt;
-#include &lt;stdbool.h&gt;
-#include &lt;stdlib.h&gt;
-
-// maze_rows는 2차원 배열 maze의 행 길이, maze_cols는 2차원 배열 maze의 열 길이입니다.
-int solution(int** maze, size_t maze_rows, size_t maze_cols) {
-    int answer = 0;
-    return answer;
-}">
-            <li class="nav-item">
-             <a class="btn-tab nav-link active" data-id="70516" data-language="c" href="#">
-              solution.c
-             </a>
-            </li>
-           </input>
-          </input>
-         </ul>
-         <textarea hidden="" id="code" name="code">#include &lt;stdio.h&gt;
-#include &lt;stdbool.h&gt;
-#include &lt;stdlib.h&gt;
-
-// maze_rows는 2차원 배열 maze의 행 길이, maze_cols는 2차원 배열 maze의 열 길이입니다.
-int solution(int** maze, size_t maze_rows, size_t maze_cols) {
-    int answer = 0;
-    return answer;
-}</textarea>
-        </div>
-       </div>
-       <div class="output-section" id="tour6">
-        <div class="tab-header">
-         <div class="output-title output-only" data-toggle="tab" id="output-title">
-          <span class="connection-status disconnected" data-container="body" data-content="
-                    &lt;h6&gt;네트워크가 불안정하여 서버와의 연결이 끊어졌습니다.
-                    페이지 새로고침을 하거나 네트워크가 안정적이 되면 자동으로 재 연결됩니다.&lt;/h6&gt;
-                    &lt;h6 style='margin-top: 4px;'&gt;네트워크가 정상임에도 계속해서 연결이 끊어진 상태가 지속된다면 네트워크 방화벽 문제일 수 있습니다.
-                    모바일 테더링 등 다른 네트워크를 통해 테스트에 접속해 보세요.&lt;/h6&gt;" data-html="true" data-placement="top" data-toggle="popover" title="서버와의 연결 끊김">
-           <svg class="ic-24">
-            <use xlink:href="/assets/svg-defs-5f0c025eb292d6a07b7f64ec73138e812e32cff2aa62e22da4bad17d4a75395a.svg#ic-power-off">
-            </use>
-           </svg>
-          </span>
-          실행 결과
-          <a class="btn btn-sm btn-danger" href="#" id="stop-button">
-           실행 중지
-          </a>
-          <span class="spinner hidden" id="output-spinner">
-           <span class="bounce1">
-           </span>
-           <span class="bounce2">
-           </span>
-           <span class="bounce3">
-           </span>
-          </span>
-         </div>
-        </div>
-        <div class="console tab-content">
-         <div class="console-output tab-pane fade in active show banner" id="output">
-          <div id="output-wrapper">
-           실행 결과가 여기에 표시됩니다.
-           <pre class="console-content"><div></div></pre>
-          </div>
-          <div class="challengeable-banner-wrapper initial-banner hidden" data-hackle-view='{"key":"school_challenge_initial_banner_viewed","properties":{"course_id":30,"lesson_id":250134,"banner_id":10196,"challenge_title":"[PCCP 기출문제] 4번 / 수레 움직이기","challenge_level":3,"challenge_category":"algorithm"}}' style="position:relative;width:100%;display:flex;justify-content:end;position:absolute;right: 0px;bottom: 21px;">
-           <a data-hackle-value='{"key":"school_challenge_initial_banner_clicked","properties":{"course_id":30,"lesson_id":250134,"banner_id":10196,"challenge_title":"[PCCP 기출문제] 4번 / 수레 움직이기","challenge_level":3,"challenge_category":"algorithm"}}' href="https://school.programmers.co.kr/learn/courses/25330" style="width:100%; max-width:320px;" target="_blank">
-            <img alt="프로그래머스 K-Digital Training" src="https://grepp-programmers.s3.amazonaws.com/production/file_resource/8263/coding_test-3.jpg" style="width:100%; max-width:320px;"/>
-           </a>
-          </div>
-         </div>
-        </div>
-       </div>
-      </div>
-     </div>
-     <div class="button-section">
-      <div class="testcase-button">
-       <a class="btn btn-dark" href="/learn/courses/30/lessons/250134/questions" id="btn-show-question">
-        질문하기 (24)
-       </a>
-      </div>
-      <div class="func-buttons">
-       <a class="btn btn-primary" href="https://programmers.co.kr/account/sign_in?referer=https%3A%2F%2Fschool.programmers.co.kr%2Flearn%2Fcourses%2F30%2Flessons%2F250134">
-        로그인하기
-       </a>
-      </div>
-     </div>
-    </div>
-   </div>
-  </div>
-  <div aria-hidden="true" class="modal fade" id="modal-dialog" role="dialog" tabindex="-1">
-  </div>
-  <script debug="false" src="/assets/library-44fa0b7c784a782c7d03a1393f94a9b8f9b8275277528da16d31156184bcc4dc.js">
+  <meta content="스타트링크 (Startlink)" name="author"/>
+  <meta content="ACM-ICPC, ICPC, 프로그래밍, 온라인 저지, 정보올림피아드, 코딩, 알고리즘, 대회, 올림피아드, 자료구조" name="keywords"/>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+  <meta content="website" property="og:type"/>
+  <meta content="https://onlinejudgeimages.s3-ap-northeast-1.amazonaws.com/images/boj-og.png" property="og:image"/>
+  <meta content="Baekjoon Online Judge" property="og:site_name"/>
+  <meta content="telephone=no" name="format-detection"/>
+  <meta content="none" name="msapplication-config"/>
+  <link href="/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
+  <link href="/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+  <link href="/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+  <link href="/site.webmanifest" rel="manifest"/>
+  <link color="#0076c0" href="/safari-pinned-tab.svg" rel="mask-icon"/>
+  <meta content="#00aba9" name="msapplication-TileColor"/>
+  <meta content="#ffffff" name="theme-color"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://ddo7jzca0m2vt.cloudfront.net/unify/css/style.css?version=20240111" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,700|Open+Sans:400,400i,700,700i|Source+Code+Pro&amp;subset=korean" rel="stylesheet"/>
+  <link href="https://ddo7jzca0m2vt.cloudfront.net/css/connect.css?version=20240111" rel="stylesheet"/>
+  <link href="https://ddo7jzca0m2vt.cloudfront.net/css/result.css?version=20240111" rel="stylesheet"/>
+  <link href="https://ddo7jzca0m2vt.cloudfront.net/css/label.css?version=20240111" rel="stylesheet"/>
+  <link href="https://ddo7jzca0m2vt.cloudfront.net/unify/css/custom.css?version=20240111" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css" rel="stylesheet"/>
+  <link href="https://ddo7jzca0m2vt.cloudfront.net/unify/css/theme-colors/blue.css?version=20240111" rel="stylesheet"/>
+  <link href="https://ddo7jzca0m2vt.cloudfront.net/css/pace.css" rel="stylesheet"/>
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-C81GGQEMJZ">
   </script>
   <script>
-   //<![CDATA[
-    I18n.defaultLocale = "ko";
-    I18n.locale = "ko";
-    I18n.fallbacks = true;
+   window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-//]]>
+  gtag('config', 'G-C81GGQEMJZ');
   </script>
-  <script src="/assets/application-2f6e5c520f568c5c1f4dde2d8969e1f367b06586bb0768cf2e976e442ab5de6e.js">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.css" rel="stylesheet">
+   <meta content="" name="username"/>
+   <link href="https://ddo7jzca0m2vt.cloudfront.net/css/problem-print.css" media="print" rel="stylesheet" type="text/css"/>
+   <link href="https://ddo7jzca0m2vt.cloudfront.net/css/problem.css?version=20240111" rel="stylesheet" type="text/css"/>
+   <link href="https://ddo7jzca0m2vt.cloudfront.net/css/problem-font.css?version=20240111" rel="stylesheet" type="text/css"/>
+   <meta content="7785" name="problem-id"/>
+   <meta content="" name="user-id"/>
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <div class="header no-print">
+    <div class="topbar">
+     <div class="container">
+      <ul class="loginbar pull-right">
+       <li>
+        <a href="/register">
+         회원가입
+        </a>
+       </li>
+       <li class="topbar-devider">
+       </li>
+       <li>
+        <a href="/login?next=%2Fproblem%2F7785">
+         로그인
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div class="navbar navbar-default mega-menu" role="navigation">
+     <div class="container">
+      <div class="navbar-header">
+       <button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button">
+        <span class="sr-only">
+         Toggle navigation
+        </span>
+        <span class="fa fa-bars">
+        </span>
+       </button>
+       <a class="navbar-brand" href="/">
+        <img alt="Logo" data-retina="" id="logo-header" src="https://d2gd6pc034wcta.cloudfront.net/images/logo@2x.png"/>
+       </a>
+      </div>
+      <div class="collapse navbar-collapse navbar-responsive-collapse">
+       <ul class="nav navbar-nav">
+        <li class="dropdown mega-menu-fullwidth active">
+         <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);">
+          문제
+         </a>
+         <ul class="dropdown-menu">
+          <li>
+           <div class="mega-menu-content">
+            <div class="container">
+             <div class="row equal-height">
+              <div class="col-md-3 equal-height-in">
+               <ul class="list-unstyled equal-height-list">
+                <li>
+                 <h3>
+                  문제
+                 </h3>
+                </li>
+                <li>
+                 <a href="/problemset">
+                  전체 문제
+                 </a>
+                </li>
+                <li>
+                 <a href="/category">
+                  문제 출처
+                 </a>
+                </li>
+                <li>
+                 <a href="/step">
+                  단계별로 풀어보기
+                 </a>
+                </li>
+                <li>
+                 <a href="/problem/tags">
+                  알고리즘 분류
+                 </a>
+                </li>
+                <li>
+                 <a href="/problem/added">
+                  추가된 문제
+                 </a>
+                </li>
+                <li>
+                 <a href="/problem/ranking">
+                  문제 순위
+                 </a>
+                </li>
+               </ul>
+              </div>
+              <div class="col-md-3 equal-height-in">
+               <ul class="list-unstyled equal-height-list">
+                <li>
+                 <h3>
+                  문제
+                 </h3>
+                </li>
+                <li>
+                 <a href="/problem/only">
+                  푼 사람이 한 명인 문제
+                 </a>
+                </li>
+                <li>
+                 <a href="/problem/nobody">
+                  아무도 못 푼 문제
+                 </a>
+                </li>
+                <li>
+                 <a href="/problem/recent/submit">
+                  최근 제출된 문제
+                 </a>
+                </li>
+                <li>
+                 <a href="/problem/recent/accepted">
+                  최근 풀린 문제
+                 </a>
+                </li>
+                <li>
+                 <a href="/problem/random">
+                  랜덤
+                 </a>
+                </li>
+               </ul>
+              </div>
+              <div class="col-md-3 equal-height-in">
+               <ul class="list-unstyled equal-height-list">
+                <li>
+                 <h3>
+                  출처
+                 </h3>
+                </li>
+                <li>
+                 <a href="/category/1">
+                  ICPC
+                 </a>
+                </li>
+                <li>
+                 <a href="/category/2">
+                  Olympiad
+                 </a>
+                </li>
+                <li>
+                 <a href="/category/55">
+                  한국정보올림피아드
+                 </a>
+                </li>
+                <li>
+                 <a href="/category/57">
+                  한국정보올림피아드시․도지역본선
+                 </a>
+                </li>
+                <li>
+                 <a href="/category/318">
+                  전국 대학생 프로그래밍 대회 동아리 연합
+                 </a>
+                </li>
+                <li>
+                 <a href="/category/5">
+                  대학교 대회
+                 </a>
+                </li>
+                <li>
+                 <a href="/category/428">
+                  카카오 코드 페스티벌
+                 </a>
+                </li>
+                <li>
+                 <a href="/category/215">
+                  Coder's High
+                 </a>
+                </li>
+               </ul>
+              </div>
+              <div class="col-md-3 equal-height-in">
+               <ul class="list-unstyled equal-height-list">
+                <li>
+                 <h3>
+                  ICPC
+                 </h3>
+                </li>
+                <li>
+                 <a href="/category/7">
+                  Regionals
+                 </a>
+                </li>
+                <li>
+                 <a href="/category/4">
+                  World Finals
+                 </a>
+                </li>
+                <li>
+                 <a href="/category/211">
+                  Korea Regional
+                 </a>
+                </li>
+                <li>
+                 <a href="/category/34">
+                  Africa and the Middle East Regionals
+                 </a>
+                </li>
+                <li>
+                 <a href="/category/10">
+                  Europe Regionals
+                 </a>
+                </li>
+                <li>
+                 <a href="/category/103">
+                  Latin America Regionals
+                 </a>
+                </li>
+                <li>
+                 <a href="/category/8">
+                  North America Regionals
+                 </a>
+                </li>
+                <li>
+                 <a href="/category/92">
+                  South Pacific Regionals
+                 </a>
+                </li>
+               </ul>
+              </div>
+             </div>
+            </div>
+           </div>
+          </li>
+         </ul>
+        </li>
+        <li>
+         <a href="/workbook/top">
+          문제집
+         </a>
+        </li>
+        <li>
+         <a href="/contest/official/list">
+          대회
+          <span class="badge badge-red rounded-2x">
+           2
+          </span>
+         </a>
+        </li>
+        <li>
+         <a href="/status">
+          채점 현황
+         </a>
+        </li>
+        <li>
+         <a href="/ranklist">
+          랭킹
+         </a>
+        </li>
+        <li>
+         <a href="/board/list/all">
+          게시판
+         </a>
+        </li>
+        <li>
+         <a href="/group/list/all">
+          그룹
+         </a>
+        </li>
+        <li class="dropdown">
+         <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);">
+          더 보기
+         </a>
+         <ul class="dropdown-menu">
+          <li>
+           <a href="/change">
+            재채점 기록
+           </a>
+          </li>
+          <li>
+           <a href="/blog/list">
+            블로그
+           </a>
+          </li>
+          <li>
+           <a href="/lectures">
+            강의
+           </a>
+          </li>
+          <li>
+           <a href="/labs">
+            실험실
+           </a>
+          </li>
+          <li>
+           <a href="https://help.acmicpc.net/" target="_blank">
+            도움말
+            <i class="fa fa-external-link">
+            </i>
+           </a>
+          </li>
+          <li>
+           <a href="https://stack.acmicpc.net/" target="_blank">
+            BOJ Stack
+            <i class="fa fa-external-link">
+            </i>
+           </a>
+          </li>
+          <li>
+           <a href="https://book.acmicpc.net/" target="_blank">
+            BOJ Book
+            <i class="fa fa-external-link">
+            </i>
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li>
+         <a href="/search">
+          <i class="fa fa-search search-btn">
+          </i>
+         </a>
+        </li>
+       </ul>
+      </div>
+     </div>
+    </div>
+   </div>
+   <form action="/logout" id="logout_form" method="post">
+    <input name="next" type="hidden" value="%2Fproblem%2F7785"/>
+   </form>
+   <div class="container content">
+    <div class="no-print" style="width: 100%;">
+     <script async="" crossorigin="anonymous" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8806842758252812">
+     </script>
+     <ins class="adsbygoogle" data-ad-client="ca-pub-8806842758252812" data-ad-format="horizontal" data-ad-slot="1129585289" data-full-width-responsive="true" style="display:block;">
+     </ins>
+     <script>
+      (adsbygoogle = window.adsbygoogle || []).push({ });
+     </script>
+    </div>
+    <div class="margin-bottom-20 no-print">
+    </div>
+    <div class="row">
+     <div class="col-md-12">
+      <div id="result_log">
+      </div>
+     </div>
+     <div class="col-md-12">
+      <ul class="nav nav-pills no-print problem-menu">
+       <li class="active">
+        <a href="/problem/7785">
+         7785번
+        </a>
+       </li>
+       <li>
+        <a href="/submit/7785">
+         제출
+        </a>
+       </li>
+       <li>
+        <a href="/problem/status/7785">
+         맞힌 사람
+        </a>
+       </li>
+       <li>
+        <a href="/short/status/7785">
+         숏코딩
+        </a>
+       </li>
+       <li>
+        <a href="/problem/history/7785">
+         재채점 결과
+        </a>
+       </li>
+       <li>
+        <a href="/status?from_problem=1&amp;problem_id=7785">
+         채점 현황
+        </a>
+       </li>
+       <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="drop5" role="button">
+         강의
+         <b class="caret">
+         </b>
+        </a>
+        <ul aria-labelledby="drop5" class="dropdown-menu" id="menu2" role="menu">
+         <li>
+          <a href="https://code.plus/course/44" tabindex="-1">
+           알고리즘 중급 2/3
+          </a>
+         </li>
+        </ul>
+       </li>
+       <li>
+        <a href="/board/search/all/problem/7785">
+         질문 게시판
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col-md-12">
+      <div class="page-header">
+       <h1>
+        <span class="printable">
+         7785번
+ -
+        </span>
+        <span id="problem_title">
+         회사에 있는 사람
+        </span>
+        <span class="problem-label problem-label-multilang">
+         다국어
+        </span>
+        <div class="btn-group pull-right problem-button">
+        </div>
+       </h1>
+      </div>
+     </div>
+     <div class="col-md-12">
+      <div class="table-responsive">
+       <table class="table" id="problem-info">
+        <thead>
+         <tr>
+          <th style="width:16%;">
+           시간 제한
+          </th>
+          <th style="width:16%;">
+           메모리 제한
+          </th>
+          <th style="width:17%;">
+           제출
+          </th>
+          <th style="width:17%;">
+           정답
+          </th>
+          <th style="width:17%;">
+           맞힌 사람
+          </th>
+          <th style="width:17%;">
+           정답 비율
+          </th>
+         </tr>
+        </thead>
+        <tbody>
+         <tr>
+          <td>
+           1 초
+          </td>
+          <td>
+           256 MB
+          </td>
+          <td>
+           80277
+          </td>
+          <td>
+           33960
+          </td>
+          <td>
+           26018
+          </td>
+          <td>
+           41.308%
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </div>
+     </div>
+     <div class="" id="problem-body">
+      <div class="col-md-12">
+       <section class="problem-section" id="description">
+        <div class="headline">
+         <h2>
+          문제
+         </h2>
+        </div>
+        <div class="problem-text" id="problem_description">
+         <p>
+          상근이는 세계적인 소프트웨어 회사 기글에서 일한다. 이 회사의 가장 큰 특징은 자유로운 출퇴근 시간이다. 따라서, 직원들은 반드시 9시부터 6시까지 회사에 있지 않아도 된다.
+         </p>
+         <p>
+          각 직원은 자기가 원할 때 출근할 수 있고, 아무때나 퇴근할 수 있다.
+         </p>
+         <p>
+          상근이는 모든 사람의 출입카드 시스템의 로그를 가지고 있다. 이 로그는 어떤 사람이 회사에 들어왔는지, 나갔는지가 기록되어져 있다. 로그가 주어졌을 때, 현재 회사에 있는 모든 사람을 구하는 프로그램을 작성하시오.
+         </p>
+        </div>
+       </section>
+      </div>
+      <div class="col-md-12">
+       <section class="problem-section" id="input">
+        <div class="headline">
+         <h2>
+          입력
+         </h2>
+        </div>
+        <div class="problem-text" id="problem_input">
+         <p>
+          첫째 줄에 로그에 기록된 출입 기록의 수 n이 주어진다. (2 ≤ n ≤ 10
+          <sup>
+           6
+          </sup>
+          ) 다음 n개의 줄에는 출입 기록이 순서대로 주어지며, 각 사람의 이름이 주어지고 "enter"나 "leave"가 주어진다. "enter"인 경우는 출근, "leave"인 경우는 퇴근이다.
+         </p>
+         <p>
+          회사에는 동명이인이 없으며, 대소문자가 다른 경우에는 다른 이름이다. 사람들의 이름은 알파벳 대소문자로 구성된 5글자 이하의 문자열이다.
+         </p>
+        </div>
+       </section>
+      </div>
+      <div class="col-md-12">
+       <section class="problem-section" id="output">
+        <div class="headline">
+         <h2>
+          출력
+         </h2>
+        </div>
+        <div class="problem-text" id="problem_output">
+         <p>
+          현재 회사에 있는 사람의 이름을 사전 순의 역순으로 한 줄에 한 명씩 출력한다.
+         </p>
+        </div>
+       </section>
+      </div>
+      <div class="col-md-12">
+       <section class="problem-section" id="limit" style="display:none;">
+        <div class="headline">
+         <h2>
+          제한
+         </h2>
+        </div>
+        <div class="problem-text" id="problem_limit">
+        </div>
+       </section>
+      </div>
+      <div class="col-md-12">
+       <div class="row">
+        <div class="col-md-6">
+         <section id="sampleinput1">
+          <div class="headline">
+           <h2>
+            예제 입력 1
+            <button class="btn btn-link copy-button" data-clipboard-target="#sample-input-1" style="padding: 0px;" type="button">
+             복사
+            </button>
+           </h2>
+          </div>
+          <pre class="sampledata" id="sample-input-1">4
+Baha enter
+Askar enter
+Baha leave
+Artem enter
+</pre>
+         </section>
+        </div>
+        <div class="col-md-6">
+         <section id="sampleoutput1">
+          <div class="headline">
+           <h2>
+            예제 출력 1
+            <button class="btn btn-link copy-button" data-clipboard-target="#sample-output-1" style="padding: 0px;" type="button">
+             복사
+            </button>
+           </h2>
+          </div>
+          <pre class="sampledata" id="sample-output-1">Askar
+Artem
+</pre>
+         </section>
+        </div>
+       </div>
+      </div>
+      <div class="col-md-12">
+       <section class="problem-section" id="hint" style="display: none;">
+        <div class="headline">
+         <h2>
+          힌트
+         </h2>
+        </div>
+        <div class="problem-text" id="problem_hint">
+        </div>
+       </section>
+      </div>
+      <div style="display: none;">
+       <div id="problem-lang-base64">
+        W3sicHJvYmxlbV9pZCI6Ijc3ODUiLCJwcm9ibGVtX2xhbmciOiIwIiwidGl0bGUiOiJcdWQ2OGNcdWMwYWNcdWM1ZDAgXHVjNzg4XHViMjk0IFx1YzBhY1x1Yjc4YyIsImRlc2NyaXB0aW9uIjoiPHA+XHVjMGMxXHVhZGZjXHVjNzc0XHViMjk0IFx1YzEzOFx1YWNjNFx1YzgwMVx1Yzc3OCBcdWMxOGNcdWQ1MDRcdWQyYjhcdWM2ZThcdWM1YjQgXHVkNjhjXHVjMGFjIFx1YWUzMFx1YWUwMFx1YzVkMFx1YzExYyBcdWM3N2NcdWQ1NWNcdWIyZTQuIFx1Yzc3NCBcdWQ2OGNcdWMwYWNcdWM3NTggXHVhYzAwXHVjN2E1IFx1ZDA3MCBcdWQyYjlcdWM5ZDVcdWM3NDAgXHVjNzkwXHVjNzIwXHViODVjXHVjNmI0IFx1Y2Q5Y1x1ZDFmNFx1YWRmYyBcdWMyZGNcdWFjMDRcdWM3NzRcdWIyZTQuIFx1YjUzMFx1Yjc3Y1x1YzExYywgXHVjOWMxXHVjNmQwXHViNGU0XHVjNzQwIFx1YmMxOFx1YjRkY1x1YzJkYyZuYnNwOzlcdWMyZGNcdWJkODBcdWQxMzAgNlx1YzJkY1x1YWU0Y1x1YzljMCBcdWQ2OGNcdWMwYWNcdWM1ZDAgXHVjNzg4XHVjOWMwIFx1YzU0YVx1YzU0NFx1YjNjNCBcdWI0MWNcdWIyZTQuPFwvcD5cclxuXHJcbjxwPlx1YWMwMSBcdWM5YzFcdWM2ZDBcdWM3NDAgXHVjNzkwXHVhZTMwXHVhYzAwIFx1YzZkMFx1ZDU2MCBcdWI1NGMgXHVjZDljXHVhZGZjXHVkNTYwIFx1YzIxOCBcdWM3ODhcdWFjZTAsIFx1YzU0NFx1YmIzNFx1YjU0Y1x1YjA5OCBcdWQxZjRcdWFkZmNcdWQ1NjAgXHVjMjE4IFx1Yzc4OFx1YjJlNC48XC9wPlxyXG5cclxuPHA+XHVjMGMxXHVhZGZjXHVjNzc0XHViMjk0IFx1YmFhOFx1YjRlMCBcdWMwYWNcdWI3OGNcdWM3NTggXHVjZDljXHVjNzg1XHVjZTc0XHViNGRjIFx1YzJkY1x1YzJhNFx1ZDE1Y1x1Yzc1OCBcdWI4NWNcdWFkZjhcdWI5N2MgXHVhYzAwXHVjOWMwXHVhY2UwIFx1Yzc4OFx1YjJlNC4gXHVjNzc0IFx1Yjg1Y1x1YWRmOFx1YjI5NCBcdWM1YjRcdWI1YTQgXHVjMGFjXHViNzhjXHVjNzc0IFx1ZDY4Y1x1YzBhY1x1YzVkMCBcdWI0ZTRcdWM1YjRcdWM2NTRcdWIyOTRcdWM5YzAsIFx1YjA5OFx1YWMxNFx1YjI5NFx1YzljMFx1YWMwMCBcdWFlMzBcdWI4NWRcdWI0MThcdWM1YjRcdWM4MzggXHVjNzg4XHViMmU0LiBcdWI4NWNcdWFkZjhcdWFjMDAgXHVjOGZjXHVjNWI0XHVjODRjXHVjNzQ0IFx1YjU0YywgXHVkNjA0XHVjN2FjIFx1ZDY4Y1x1YzBhY1x1YzVkMCBcdWM3ODhcdWIyOTQgXHViYWE4XHViNGUwIFx1YzBhY1x1Yjc4Y1x1Yzc0NCBcdWFkNmNcdWQ1NThcdWIyOTQgXHVkNTA0XHViODVjXHVhZGY4XHViN2E4XHVjNzQ0IFx1Yzc5MVx1YzEzMVx1ZDU1OFx1YzJkY1x1YzYyNC48XC9wPlxyXG4iLCJpbnB1dCI6IjxwPlx1Y2NhYlx1YzlmOCBcdWM5MDRcdWM1ZDAgXHViODVjXHVhZGY4XHVjNWQwIFx1YWUzMFx1Yjg1ZFx1YjQxYyBcdWNkOWNcdWM3ODUgXHVhZTMwXHViODVkXHVjNzU4IFx1YzIxOCBuXHVjNzc0IFx1YzhmY1x1YzViNFx1YzljNFx1YjJlNC4gKDIgJmxlOyBuICZsZTsgMTA8c3VwPjY8XC9zdXA+KSBcdWIyZTRcdWM3NGMgblx1YWMxY1x1Yzc1OCBcdWM5MDRcdWM1ZDBcdWIyOTQgXHVjZDljXHVjNzg1IFx1YWUzMFx1Yjg1ZFx1Yzc3NCBcdWMyMWNcdWMxMWNcdWIzMDBcdWI4NWMgXHVjOGZjXHVjNWI0XHVjOWMwXHViYTcwLCBcdWFjMDEgXHVjMGFjXHViNzhjXHVjNzU4IFx1Yzc3NFx1Yjk4NFx1Yzc3NCBcdWM4ZmNcdWM1YjRcdWM5YzBcdWFjZTAgJnF1b3Q7ZW50ZXImcXVvdDtcdWIwOTggJnF1b3Q7bGVhdmUmcXVvdDtcdWFjMDAgXHVjOGZjXHVjNWI0XHVjOWM0XHViMmU0LiAmcXVvdDtlbnRlciZxdW90O1x1Yzc3OCBcdWFjYmRcdWM2YjBcdWIyOTQgXHVjZDljXHVhZGZjLCAmcXVvdDtsZWF2ZSZxdW90O1x1Yzc3OCBcdWFjYmRcdWM2YjBcdWIyOTQgXHVkMWY0XHVhZGZjXHVjNzc0XHViMmU0LjxcL3A+XHJcblxyXG48cD5cdWQ2OGNcdWMwYWNcdWM1ZDBcdWIyOTQgXHViM2Q5XHViYTg1XHVjNzc0XHVjNzc4XHVjNzc0IFx1YzVjNlx1YzczY1x1YmE3MCwgXHViMzAwXHVjMThjXHViYjM4XHVjNzkwXHVhYzAwIFx1YjJlNFx1Yjk3OCBcdWFjYmRcdWM2YjBcdWM1ZDBcdWIyOTQgXHViMmU0XHViOTc4IFx1Yzc3NFx1Yjk4NFx1Yzc3NFx1YjJlNC4mbmJzcDtcdWMwYWNcdWI3OGNcdWI0ZTRcdWM3NTggXHVjNzc0XHViOTg0XHVjNzQwIFx1YzU0Y1x1ZDMwY1x1YmNiMyBcdWIzMDBcdWMxOGNcdWJiMzhcdWM3OTBcdWI4NWMgXHVhZDZjXHVjMTMxXHViNDFjIDVcdWFlMDBcdWM3OTAgXHVjNzc0XHVkNTU4XHVjNzU4IFx1YmIzOFx1Yzc5MFx1YzVmNFx1Yzc3NFx1YjJlNC48XC9wPlxyXG4iLCJvdXRwdXQiOiI8cD5cdWQ2MDRcdWM3YWMgXHVkNjhjXHVjMGFjXHVjNWQwIFx1Yzc4OFx1YjI5NCBcdWMwYWNcdWI3OGNcdWM3NTggXHVjNzc0XHViOTg0XHVjNzQ0IFx1YzBhY1x1YzgwNCBcdWMyMWNcdWM3NTggXHVjNWVkXHVjMjFjXHVjNzNjXHViODVjIFx1ZDU1YyBcdWM5MDRcdWM1ZDAgXHVkNTVjIFx1YmE4NVx1YzUyOSBcdWNkOWNcdWI4MjVcdWQ1NWNcdWIyZTQuPFwvcD5cclxuIiwiaGludCI6IiIsIm9yaWdpbmFsIjoiMCIsImh0bWxfdGl0bGUiOiIwIiwicHJvYmxlbV9sYW5nX3Rjb2RlIjoiS29yZWFuIn0seyJwcm9ibGVtX2lkIjoiNzc4NSIsInByb2JsZW1fbGFuZyI6IjEiLCJ0aXRsZSI6IkVhc3kgd29yayIsImRlc2NyaXB0aW9uIjoiPHA+WW91IGFyZSB3b3JraW5nIGluIGEgJnJkcXVvO0dpaWdsZSZyZHF1bzsgc29mdHdhcmUgY29tcGFueS4gVGhlIGpvYiBpbiB0aGlzIGNvbXBhbnkgaXMgdmVyeSBlYXN5LCBzbyBwZW9wbGUgZG9uJnJzcXVvO3Qgc2l0IGluIHRoZSBvXHVmYjAzY2UgZnJvbSA5YW0gdGlsbCA2cG0uIFRoZXkgY29tZSB0byB3b3JrIGF0IGFueSB0aW1lLCBhbmQgbGVhdmUgdGhlIG9cdWZiMDNjZSBhdCBhbnkgdGltZS4gWW91IGhhdmUgYSBtYWduZXRpYyBrZXlzIHN5c3RlbSB0aGF0IGtlZXBzIHRoZSBsb2cgb24gYWxsIHBlb3BsZSAmbmRhc2g7IHdoZW4gdGhleSBlbnRlcmVkIHRoZSBvXHVmYjAzY2UsIGFuZCB3aGVuIHRoZXkgbGVhdmVkLiBZb3VyIHRhc2sgaXMgdG8gXHVmYjAxbmQgYWxsIHBlb3BsZSB0aGF0IGFyZSBpbiBvXHVmYjAzY2Ugbm93LjxcL3A+XHJcbiIsImlucHV0IjoiPHA+VGhlIFx1ZmIwMXJzdCBsaW5lIG9mIHRoZSBpbnB1dCBcdWZiMDFsZSBjb250YWlucyBuICZtZGFzaDsgdGhlIG51bWJlciBvZiBsaW5lcyBpbiBpbnB1dCBcdWZiMDFsZSAoMiAmbGU7IG4gJmxlOyAxMDxzdXA+NjxcL3N1cD4pLiBFYWNoIG9mIHRoZSBmb2xsb3dpbmcgbiBsaW5lcyBjb250YWluIHBlcnNvbiBuYW1lIGFuZCB3b3JkICZyZHF1bztlbnRlciZyZHF1bzsgaWYgdGhpcyBwZXJzb24gaXMgZW50ZXJlZCwgYW5kICZyZHF1bztsZWF2ZSZyZHF1bzsgb3RoZXJ3aXNlLjxcL3A+XHJcbiIsIm91dHB1dCI6IjxwPk91dHB1dCBuYW1lcyBvZiBhbGwgcGVvcGxlIHRoYXQgYXJlIGluIG9cdWZiMDNjZSBub3cgaW4gYW50aS1sZXhpY29ncmFwaGljYWwgb3JkZXIuPFwvcD5cclxuXHJcbjxwPiZuYnNwOzxcL3A+XHJcbiIsImhpbnQiOiIiLCJvcmlnaW5hbCI6IjEiLCJodG1sX3RpdGxlIjoiMCIsInByb2JsZW1fbGFuZ190Y29kZSI6IkVuZ2xpc2gifV0=
+       </div>
+      </div>
+     </div>
+     <div class="col-md-12">
+      <section id="source">
+       <div class="headline">
+        <h2>
+         출처
+        </h2>
+       </div>
+       <p>
+        <a href="/category/45">
+         Contest
+        </a>
+        &gt;
+        <a href="/category/222">
+         KBTU Open
+        </a>
+        &gt;
+        <a href="/category/detail/938">
+         KBTU Open 2008
+        </a>
+        E번
+       </p>
+       <ul>
+        <li>
+         문제를 번역한 사람:
+         <a href="/user/baekjoon">
+          baekjoon
+         </a>
+        </li>
+        <li>
+         빠진 조건을 찾은 사람:
+         <a href="/user/haja">
+          haja
+         </a>
+         ,
+         <a href="/user/lyzqm">
+          lyzqm
+         </a>
+        </li>
+        <li>
+         데이터를 추가한 사람:
+         <a href="/user/jh05013">
+          jh05013
+         </a>
+        </li>
+       </ul>
+      </section>
+     </div>
+    </div>
+    <div class="margin-bottom-20">
+    </div>
+    <div class="no-print" style="width: 100%;">
+     <script async="" crossorigin="anonymous" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8806842758252812">
+     </script>
+     <ins class="adsbygoogle" data-ad-client="ca-pub-8806842758252812" data-ad-format="auto" data-ad-slot="1129585289" data-full-width-responsive="true" style="display:block;">
+     </ins>
+     <script>
+      (adsbygoogle = window.adsbygoogle || []).push({ });
+     </script>
+    </div>
+    <div class="margin-bottom-20 no-print">
+    </div>
+   </div>
+   <div class="footer-v3 no-print">
+    <div class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-sm-3 md-margin-bottom-40">
+        <div class="thumb-headline">
+         <h2>
+          Baekjoon Online Judge
+         </h2>
+        </div>
+        <ul class="list-unstyled simple-list margin-bottom-10">
+         <li>
+          <a href="/about">
+           소개
+          </a>
+         </li>
+         <li>
+          <a href="/news">
+           뉴스
+          </a>
+         </li>
+         <li>
+          <a href="/live">
+           생중계
+          </a>
+         </li>
+         <li>
+          <a href="/poll">
+           설문조사
+          </a>
+         </li>
+         <li>
+          <a href="/blog">
+           블로그
+          </a>
+         </li>
+         <li>
+          <a href="/board/view/70222">
+           디스코드 서버
+          </a>
+         </li>
+         <li>
+          <a href="/donate">
+           기부하기
+          </a>
+         </li>
+         <li>
+          <a href="https://github.com/Startlink/BOJ-Feature-Request">
+           기능 추가 요청
+          </a>
+         </li>
+         <li>
+          <a href="https://github.com/Startlink/BOJ-spj">
+           스페셜 저지 제작
+          </a>
+         </li>
+         <li>
+          <a href="/labs">
+           실험실
+          </a>
+         </li>
+        </ul>
+        <div class="thumb-headline">
+         <h2>
+          채점 현황
+         </h2>
+        </div>
+        <ul class="list-unstyled simple-list">
+         <li>
+          <a href="/status">
+           채점 현황
+          </a>
+         </li>
+        </ul>
+       </div>
+       <div class="col-sm-3 md-margin-bottom-40">
+        <div class="thumb-headline">
+         <h2>
+          문제
+         </h2>
+        </div>
+        <ul class="list-unstyled simple-list margin-bottom-10">
+         <li>
+          <a href="/problemset">
+           문제
+          </a>
+         </li>
+         <li>
+          <a href="/step">
+           단계
+          </a>
+         </li>
+         <li>
+          <a href="/problem/tags">
+           분류
+          </a>
+         </li>
+         <li>
+          <a href="/problem/added">
+           추가된 문제
+          </a>
+         </li>
+         <li>
+          <a href="/problem/ranking">
+           문제 순위
+          </a>
+         </li>
+         <li>
+          <a href="/problem/recent/submit">
+           최근 제출된 문제
+          </a>
+         </li>
+         <li>
+          <a href="/problem/recent/accepted">
+           최근 풀린 문제
+          </a>
+         </li>
+         <li>
+          <a href="/change">
+           재채점 및 문제 수정
+          </a>
+         </li>
+        </ul>
+        <div class="thumb-headline">
+         <h2>
+          유저 대회
+         </h2>
+        </div>
+        <ul class="list-inline simple-list margin-bottom">
+         <li>
+          <a href="/category/353">
+           FunctionCup
+          </a>
+         </li>
+         <li>
+          <a href="/category/469">
+           Good Bye, BOJ
+          </a>
+         </li>
+         <li>
+          <a href="/category/319">
+           kriiicon
+          </a>
+         </li>
+         <li>
+          <a href="/category/420">
+           구데기컵
+          </a>
+         </li>
+         <li>
+          <a href="/category/358">
+           꼬마컵
+          </a>
+         </li>
+         <li>
+          <a href="/category/421">
+           네블컵
+          </a>
+         </li>
+         <li>
+          <a href="/category/413">
+           소프트콘
+          </a>
+         </li>
+         <li>
+          <a href="/category/416">
+           웰노운컵
+          </a>
+         </li>
+         <li>
+          <a href="/category/441">
+           키파컵
+          </a>
+         </li>
+         <li>
+          <a href="/category/496">
+           폴리매스 코드 챔피언십
+          </a>
+         </li>
+         <li>
+          <a href="/category/detail/1743">
+           HYEA Cup
+          </a>
+         </li>
+        </ul>
+        <div class="thumb-headline">
+         <h2>
+          고등학교 대회
+         </h2>
+        </div>
+        <ul class="list-inline simple-list margin-bottom">
+         <li>
+          <a href="/category/836">
+           NLCS Jeju
+          </a>
+         </li>
+         <li>
+          <a href="/category/364">
+           경기과학고등학교
+          </a>
+         </li>
+         <li>
+          <a href="/category/630">
+           경기북과학고등학교
+          </a>
+         </li>
+         <li>
+          <a href="/category/669">
+           단국대학교부속소프트웨어고등학교
+          </a>
+         </li>
+         <li>
+          <a href="/category/417">
+           대구과학고등학교
+          </a>
+         </li>
+         <li>
+          <a href="/category/855">
+           대구소프트웨어마이스터고등학교
+          </a>
+         </li>
+         <li>
+          <a href="/category/664">
+           동래고등학교
+          </a>
+         </li>
+         <li>
+          <a href="/category/429">
+           부산일과학고
+          </a>
+         </li>
+         <li>
+          <a href="/category/435">
+           서울과학고등학교
+          </a>
+         </li>
+         <li>
+          <a href="/category/394">
+           선린인터넷고등학교
+          </a>
+         </li>
+         <li>
+          <a href="/category/610">
+           세종과학예술영재학교
+          </a>
+         </li>
+         <li>
+          <a href="/category/854">
+           송도고등학교
+          </a>
+         </li>
+         <li>
+          <a href="/category/542">
+           한국과학영재학교
+          </a>
+         </li>
+        </ul>
+       </div>
+       <div class="col-sm-3 md-margin-bottom-40">
+        <div class="thumb-headline">
+         <h2>
+          출처
+         </h2>
+        </div>
+        <ul class="list-unstyled simple-list margin-bottom-10">
+         <li>
+          <a href="/category/1">
+           ICPC
+          </a>
+         </li>
+         <li>
+          <a href="/category/211">
+           ICPC Korea Regional
+          </a>
+         </li>
+         <li>
+          <a href="/category/2">
+           Olympiad
+          </a>
+         </li>
+         <li>
+          <a href="/category/55">
+           한국정보올림피아드
+          </a>
+         </li>
+         <li>
+          <a href="/category/57">
+           한국정보올림피아드시․도지역본선
+          </a>
+         </li>
+         <li>
+          <a href="/category/428">
+           카카오 코드 페스티벌
+          </a>
+         </li>
+         <li>
+          <a href="/category/215">
+           Coder's High
+          </a>
+         </li>
+         <li>
+          <a href="/category/485">
+           Open Cup
+          </a>
+         </li>
+         <li>
+          <a href="/category/477">
+           Petrozavodsk Programming Camp
+          </a>
+         </li>
+        </ul>
+        <div class="thumb-headline">
+         <h2>
+          대학교 대회
+         </h2>
+        </div>
+        <ul class="list-inline simple-list">
+         <li>
+          <a href="/category/662">
+           DGIST
+          </a>
+         </li>
+         <li>
+          <a href="/category/320">
+           KAIST
+          </a>
+         </li>
+         <li>
+          <a href="/category/426">
+           POSTECH
+          </a>
+         </li>
+         <li>
+          <a href="/category/461">
+           UNIST
+          </a>
+         </li>
+         <li>
+          <a href="/category/466">
+           가톨릭대학교
+          </a>
+         </li>
+         <li>
+          <a href="/category/518">
+           강원대학교
+          </a>
+         </li>
+         <li>
+          <a href="/category/454">
+           건국대학교
+          </a>
+         </li>
+         <li>
+          <a href="/category/438">
+           경북대학교
+          </a>
+         </li>
+         <li>
+          <a href="/category/341">
+           고려대학교
+          </a>
+         </li>
+         <li>
+          <a href="/category/434">
+           광주과학기술원
+          </a>
+         </li>
+         <li>
+          <a href="/category/361">
+           국민대학교
+          </a>
+         </li>
+         <li>
+          <a href="/category/671">
+           부산대학교
+          </a>
+         </li>
+         <li>
+          <a href="/category/83">
+           서강대학교
+          </a>
+         </li>
+         <li>
+          <a href="/category/674">
+           서울과학기술대학교
+          </a>
+         </li>
+         <li>
+          <a href="/category/354">
+           서울대학교
+          </a>
+         </li>
+         <li>
+          <a href="/category/709">
+           서울사이버대학교
+          </a>
+         </li>
+         <li>
+          <a href="/category/468">
+           성균관대학교
+          </a>
+         </li>
+         <li>
+          <a href="/category/527">
+           숙명여자대학교
+          </a>
+         </li>
+         <li>
+          <a href="/category/352">
+           숭실대학교
+          </a>
+         </li>
+         <li>
+          <a href="/category/408">
+           아주대학교
+          </a>
+         </li>
+         <li>
+          <a href="/category/334">
+           연세대학교
+          </a>
+         </li>
+         <li>
+          <a href="/category/541">
+           연세대학교 미래캠퍼스
+          </a>
+         </li>
+         <li>
+          <a href="/category/467">
+           인천대학교
+          </a>
+         </li>
+         <li>
+          <a href="/category/336">
+           인하대학교
+          </a>
+         </li>
+         <li>
+          <a href="/category/925">
+           전남대학교
+          </a>
+         </li>
+         <li>
+          <a href="/category/347">
+           전북대학교
+          </a>
+         </li>
+         <li>
+          <a href="/category/609">
+           제주대학교
+          </a>
+         </li>
+         <li>
+          <a href="/category/400">
+           중앙대학교
+          </a>
+         </li>
+         <li>
+          <a href="/category/402">
+           충남대학교
+          </a>
+         </li>
+         <li>
+          <a href="/category/607">
+           한국항공대학교
+          </a>
+         </li>
+         <li>
+          <a href="/category/440">
+           한양대학교
+          </a>
+         </li>
+         <li>
+          <a href="/category/418">
+           한양대학교 ERICA 캠퍼스
+          </a>
+         </li>
+         <li>
+          <a href="/category/363">
+           홍익대학교
+          </a>
+         </li>
+         <li>
+          <a href="/category/409">
+           경인지역 6개대학 연합 프로그래밍 경시대회
+          </a>
+         </li>
+         <li>
+          <a href="/category/318">
+           전국 대학생 프로그래밍 대회 동아리 연합
+          </a>
+         </li>
+        </ul>
+       </div>
+       <div class="col-sm-3 md-margin-bottom-40">
+        <div class="thumb-headline">
+         <h2>
+          <a href="https://help.acmicpc.net">
+           도움말
+          </a>
+         </h2>
+        </div>
+        <ul class="list-unstyled simple-list margin-bottom-10">
+         <li>
+          <a href="https://help.acmicpc.net/judge/info">
+           채점 도움말 및 채점 환경
+          </a>
+         </li>
+         <li>
+          <a href="https://help.acmicpc.net/judge/rejudge">
+           재채점 안내
+          </a>
+         </li>
+         <li>
+          <a href="https://help.acmicpc.net/judge/rte">
+           런타임 에러 도움말
+          </a>
+         </li>
+         <li>
+          <a href="https://help.acmicpc.net/problem/style">
+           문제 스타일 안내
+          </a>
+         </li>
+         <li>
+          <a href="https://help.acmicpc.net/language/info">
+           컴파일 또는 실행 옵션, 컴파일러 버전, 언어 도움말
+          </a>
+         </li>
+         <li>
+          <a href="https://help.acmicpc.net/workbook">
+           문제집 도움말
+          </a>
+         </li>
+         <li>
+          <a href="https://help.acmicpc.net/contest/open">
+           대회 개최 안내
+          </a>
+         </li>
+         <li>
+          <a href="https://help.acmicpc.net/problem/add">
+           문제 출제 안내
+          </a>
+         </li>
+         <li>
+          <a href="https://help.acmicpc.net/rule">
+           이용 규칙
+          </a>
+         </li>
+         <li>
+          <a href="https://help.acmicpc.net/stats">
+           통계 도움말
+          </a>
+         </li>
+         <li>
+          <a href="https://help.acmicpc.net/question">
+           질문 도움말
+          </a>
+         </li>
+         <li>
+          <a href="https://help.acmicpc.net/faq">
+           자주묻는 질문
+          </a>
+         </li>
+         <li>
+          <a href="https://help.acmicpc.net/etc/short">
+           짧은 주소 안내
+          </a>
+         </li>
+         <li>
+          <a href="https://help.acmicpc.net/ad">
+           광고 안내
+          </a>
+         </li>
+        </ul>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="copyright">
+     <div class="container">
+      <div class="row">
+       <div class="col-md-9 col-sm-12">
+        <p>
+         © 2025 All Rights Reserved.
+         <a href="https://startlink.io">
+          주식회사 스타트링크
+         </a>
+         |
+         <a href="/terms">
+          서비스 약관
+         </a>
+         |
+         <a href="/privacy">
+          개인정보 보호
+         </a>
+         |
+         <a href="/terms/payment">
+          결제 이용 약관
+         </a>
+         |
+         <a href="https://help.acmicpc.net">
+          도움말
+         </a>
+         |
+         <a href="https://help.acmicpc.net/ad">
+          광고 문의
+         </a>
+         |
+         <a href="https://github.com/Startlink/update-note/blob/master/boj.md">
+          업데이트 노트
+         </a>
+         |
+         <a href="https://github.com/Startlink/update-note/blob/master/boj-issues.md">
+          이슈
+         </a>
+         |
+         <a href="https://github.com/Startlink/update-note/blob/master/boj-todo.md">
+          TODO
+         </a>
+        </p>
+       </div>
+       <div class="col-md-3 col-sm-12">
+        <ul class="social-icons pull-right">
+         <li>
+          <a class="rounded-x social_facebook" data-original-title="Facebook" href="https://www.facebook.com/onlinejudge">
+          </a>
+         </li>
+         <li>
+          <a class="rounded-x social_wordpress" data-original-title="Wordpress" href="https://startlink.blog">
+          </a>
+         </li>
+        </ul>
+       </div>
+      </div>
+      <div class="row">
+       <div class="col-sm-12">
+        <a class="hidden-xs" href="https://startlink.io">
+         <img class="pull-right startlink-logo" src="https://d2gd6pc034wcta.cloudfront.net/logo/startlink-logo-white-only.png"/>
+        </a>
+        <ul class="list-unstyled simple-list">
+         <li>
+          사업자 등록 번호: 541-88-00682
+         </li>
+         <li>
+          대표자명: 최백준
+         </li>
+         <li>
+          주소: 서울시 서초구 서초대로74길 29 서초파라곤 412호
+         </li>
+         <li>
+          전화번호: 02-521-0487 (이메일로 연락 주세요)
+         </li>
+         <li>
+          이메일:
+          <a href="mailto:contacts@startlink.io">
+           contacts@startlink.io
+          </a>
+         </li>
+         <li>
+          통신판매신고번호: 제 2017-서울서초-2193 호
+         </li>
+        </ul>
+       </div>
+       <div class="col-sm-9">
+        <p id="no-acm-icpc">
+        </p>
+       </div>
+       <div class="col-sm-3">
+        <p class="pull-right">
+         <a href="/lang?lang=0&amp;next=%2Fproblem%2F7785">
+          한국어
+         </a>
+         |
+         <a href="/lang?lang=1&amp;next=%2Fproblem%2F7785">
+          English (Beta)
+         </a>
+        </p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div id="fb-root">
+  </div>
+  <script>
+   window.fbAsyncInit = function() {
+  FB.init({
+    appId      : '322026491226049',
+    cookie     : true,
+    xfbml      : true,
+    version    : 'v2.8'
+});
+};
+(function(d, s, id) {
+var js, fjs = d.getElementsByTagName(s)[0];
+if (d.getElementById(id)) return;
+js = d.createElement(s); js.id = id;
+js.src = "//connect.facebook.net/ko_KR/sdk.js";
+fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
   </script>
   <script>
-   //<![CDATA[
-window.addEventListener('load', function() {});
-//]]>
+   !function(f,b,e,v,n,t,s){ if(f.fbq)return;n=f.fbq=function(){ n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments) };if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s) }(window,
+document,'script','//connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '1670563073163149');
+fbq('track', 'PageView');
   </script>
-  <script src="//widget.cloudinary.com/global/all.js" type="text/javascript">
-   cloudinary.setCloudName('eightcruz');
+  <noscript>
+   <img height="1" src="https://www.facebook.com/tr?id=1670563073163149&amp;ev=PageView&amp;noscript=1" style="display:none" width="1"/>
+  </noscript>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
   </script>
-  <script src="https://www.gstatic.com/charts/loader.js" type="text/javascript">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.0.1/jquery-migrate.min.js">
   </script>
-  <script crossorigin="anonymous" integrity="sha384-QLRjp0fR75x7D0LjPI+SXePWP9XQ0m2EmTJkX3pjLU45zt9uU2FgmiiqnMGl9w/N" src="https://browser.sentry-cdn.com/7.104.0/bundle.min.js">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/bootstrap.min.js" type="text/javascript">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" type="text/javascript">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/locale/ko.js" type="text/javascript">
+  </script>
+  <script src="https://ddo7jzca0m2vt.cloudfront.net/unify/js/app.min.js?version=20240111" type="text/javascript">
   </script>
   <script type="text/javascript">
-   Sentry.init({
-      environment: "production",
-      dsn: "https://96f9fc1ff3f44acbb98a9c156338d14b@o1070092.ingest.sentry.io/6136918",
-      initialScope: {
-        code_version: "16c8e3a70901d3edaf0c3ae349ca2eb9291527a2",
-      },
-      // Set tracesSampleRate to 1.0 to capture 100%
-      // of transactions for performance monitoring.
-      // We recommend adjusting this value in production
-      beforeSend: function beforeSend(event) {
-        const firstException = (event.exception && event.exception.values || [])[0];
-
-        if (firstException) {
-          const mechanism = firstException.mechanism;
-          const stacktrace = firstException.stacktrace;
-          const value = firstException.value;
-
-          const isOnError = () => mechanism && mechanism.type === 'onerror';
-          const hasAnonymousFilename = () => Boolean(
-            stacktrace && stacktrace.frames && stacktrace.frames.some(
-              ({ filename }) => filename && filename.includes('anonymous'),
-            ),
-          );
-
-          const isIgnorableAgoraError = value?.includes('can not generate join message, no join info') || value?.includes('WS_ABORT');
-
-          /* console의 예외는 sentry에 보내지 않는다. #4226 */
-          if (isOnError() && hasAnonymousFilename())
-            return null;
-
-          if (isIgnorableAgoraError)
-            return null;
-        }
-
-        return event;
-      },
+   jQuery(document).ready(function() {App.init(0);});
+  </script>
+  <!--[if lt IE 9]><script src="https://ddo7jzca0m2vt.cloudfront.net/unify/plugins/respond.js"></script><script src="https://ddo7jzca0m2vt.cloudfront.net/unify/plugins/html5shiv.js"></script><script src="https://ddo7jzca0m2vt.cloudfront.net/unify/js/plugins/placeholder-IE-fixes.js"></script><![endif]-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.min.js" type="text/javascript">
+  </script>
+  <script src="https://js.pusher.com/4.2/pusher.min.js">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.js">
+  </script>
+  <script src="https://ddo7jzca0m2vt.cloudfront.net/js/mathjax.js">
+  </script>
+  <script async="" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+  <script src="https://ddo7jzca0m2vt.cloudfront.net/js/detectmobilebrowser.js" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   function update_image_responsive() {
+		if ($.browser.mobile) {
+			$(".problem-text img").each(function(index) {
+				if (!$(this).hasClass('no-responsive')) {
+					$(this).addClass("img-responsive").css('width', 'auto').css('height', 'auto').css('max-width','100%');
+				}
+			});
+			$(".problem-text table[class^='table-'], .problem-text table[class*=' table-']").each(function(index) {
+				$(this).css('margin-left',0);
+				$(this).css('margin-right',0);
+			});
+		}
+	}
+	$(document).ready(function() {
+		update_image_responsive();
+	});
+  </script>
+  <script type="text/javascript">
+   var problem_lang = 0;
+	var subtask_table = 0;
+	var keys = $('.problem-section').map(function(_,el) {
+		return $(el).attr('id');
+	}).get();
+	$(function() {
+		var language_change = function(lang) {
+			$('#lang-select-button > .lang-select-text').text($('a.language-select-link[data-language-id='+lang+'] span.lang-text').text());
+			var check = {};
+			for (var i=0; i<keys.length; i++) {
+				var key = keys[i];
+				check[key] = false;
+			}
+			for (key in problem_langs[lang]) {
+				if (problem_langs[lang][key].length > 0) {
+					if (key == 'title') {
+						$('#problem_'+key).text(problem_langs[lang][key]);
+					} else {
+						$('#problem_'+key).html(problem_langs[lang][key]);
+					}
+					if (subtask_table && key.startsWith('subtask')) {
+						var subtask_id = parseInt(key.substring(7));
+						$('#problem_subtask table.subtask-table tr[data-subtask-id="'+subtask_id+'"] td.subtask-body').html(problem_langs[lang][key]);
+						check['subtask'] = true;
+					}
+					$('#'+key).show();
+					check[key] = true;
+				}
+			}
+			for (var i=0; i<keys.length; i++) {
+				var key = keys[i];
+				if (check[key] == false) {
+					$('#'+key).hide();
+				}
+			}
+			$("title").text("7785번: " + problem_langs[lang]['title']);
+			MathJax.typeset();
+			if (lang == 0) {
+				$('#original-diff').hide();
+			} else {
+				$('#original-diff').show();
+			}
+			update_image_responsive();
+		};
+		var temp = JSON.parse(atob($('#problem-lang-base64').html()));
+		var problem_langs = {};
+		for (var i=0; i<temp.length; i++) {
+			problem_langs[parseInt(temp[i]['problem_lang'])] = temp[i];
+		}
+		$('.language-select-link').click(function(e) {
+			e.preventDefault();
+			var lang = parseInt($(this).attr('data-language-id'));
+			if (lang != problem_lang && (lang in problem_langs) && problem_langs[lang]) {
+				problem_lang = lang;
+				language_change(lang);
+			}
+		});
+	});
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.11/clipboard.min.js">
+  </script>
+  <script src="https://ddo7jzca0m2vt.cloudfront.net/js/problem/clipboard.js">
+  </script>
+  <script type="text/javascript">
+   $(document).ready(function() {
+    $('.show-spoiler').click(function(e) {
+    	e.preventDefault();
+    	$(this).hide();
+    	$('#problem_tags div.spoiler').show();
     });
+	});
   </script>
-  <!-- Google Tag Manager (noscript) -->
-  <noscript>
-   <iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-NT8HLJD" style="display:none;visibility:hidden" width="0">
-   </iframe>
-  </noscript>
-  <!-- End Google Tag Manager (noscript) -->
-  <script charset="utf-8" type="text/javascript">
-   window.addEventListener('afterprint', function() {
-      $.ajax({
-          type: 'POST',
-          url: '/api/action_trackings/print_screen',
-          data: {
-              current_path: window.location.href
-          }
-      })
-  })
-  </script>
-  <noscript>
-   이 사이트의 기능을 모두 활용하기 위해서는 자바스크립트를 활성화할 필요가 있습니다.
-   <a href="http://www.enable-javascript.com/ko/" target="_blank">
-    브라우저에서 자바스크립트를 활성화하는 방법
-   </a>
-   을 참고하세요.
-  </noscript>
  </body>
 </html>
