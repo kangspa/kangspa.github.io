@@ -4,7 +4,7 @@ from urllib.parse import urlparse
 from datetime import date
 from pathlib import Path
 
-url = "https://www.acmicpc.net/problem/7785"
+url = "https://www.acmicpc.net/problem/15683"
 if not url.startswith("https"): url = "https://" + url
 
 headers = {'User-Agent' : 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36'}
@@ -12,8 +12,8 @@ data = requests.get(url, headers=headers)
 
 soup = BeautifulSoup(data.text, 'html.parser')
 
-with open("test.html", "w", encoding="utf-8") as f:
-    f.write(soup.prettify()) 
+# with open("test.html", "w", encoding="utf-8") as f:
+#     f.write(soup.prettify()) 
 
 today = date.today().strftime("%Y-%m-%d")
 if urlparse(url).netloc == "www.acmicpc.net":
