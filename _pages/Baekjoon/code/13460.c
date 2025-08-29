@@ -271,7 +271,9 @@ int solve(board_t board, int last_move) {
     }
 
     // Loop through possible directions
-    int directions[4][2] = {{-1, 0}, {1, 0}, {0, -1}, {0, 1}};
+    int directions[4][2] = {
+        {-1, 0}, {1, 0}, {0, -1}, {0, 1}
+    };
     for (int i = 0; i < 4; i++) {
         // Simulate moving balls in this direction
         int red_new_row = board.red_row + directions[i][0];
