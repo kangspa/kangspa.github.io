@@ -26,3 +26,18 @@ if __name__ == '__main__':
     # a 안의 각 값에 대해 이진 탐색 후 출력
     for i in a:
         print(findInList(i, A, N))
+
+'''
+if __name__ == '__main__':
+    N = int(input())
+    NA = list(map(int, input().split()))
+    M = int(input())
+    MA = list(map(int, input().split()))
+    # 해시를 이용하기 위해 dict 형태로 변환
+    A = {v:1 for v in NA}
+    # try except 구문을 활용해 간단히 풀이
+    for a in MA:
+        try:
+            if A[a]: print(1)
+        except: print(0)
+'''
