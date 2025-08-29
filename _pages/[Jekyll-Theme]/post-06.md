@@ -29,7 +29,7 @@ thumbnail: "/assets/img/Jekyll-Theme/post-06/thumbnail.png"
     ![Image2](/assets/img/Jekyll-Theme/post-06/2.png)
 
 2. 다 설치되고나서 cmd창에서 열겠다고 그대로 진행하면, cmd 창에서 뭔가 많은 내용들이 뜨고 선택해서 설치하라는 내용이 나올 것이다.
-    그 중 `MSYS2 and MINGW development toolchain`에 해당하는 3번(기억상입니다)을 선택하기 위해, 3을 입력하고 엔터를 눌러준다.
+    그 중 `MSYS2 and MINGW development toolchain`에 해당하는 3번을 선택하기 위해, 3을 입력하고 엔터를 눌러준다.
 
 3. 이후 새로운 cmd 창을 열어서 `gem install jekyll bundler` 를 입력해주면, jekyll 설치가 진행된다.
     필자는 여기서 한 번 막혔는데, PC 재부팅한 후 진행하니까 되서 혹시나 여기서 막힌다면 재부팅 해보는 것도 추천한다.
