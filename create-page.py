@@ -9,6 +9,7 @@ if not url.startswith("https"): url = "https://" + url
 
 headers = {'User-Agent' : 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36'}
 data = requests.get(url, headers=headers)
+print(f"Status Code: {data.status_code}")
 
 soup = BeautifulSoup(data.text, 'html.parser')
 
@@ -46,30 +47,30 @@ with open(f"_pages/{directory}/{url_id}.md", "w", encoding="utf-8") as f:
         with open(file, "r", encoding="utf-8") as code_file:
             code_content = code_file.read()
             if str(file).endswith(".py"):
-                f.write("<div>\n<details>\n")
+                f.write("<details>\n")
                 f.write("<summary>Python</summary>\n")
                 f.write(f"<pre><code class='language-python'>\n{code_content}\n</code></pre>\n")
-                f.write("</details>\n</div>\n\n")
+                f.write("</details>\n\n")
             elif str(file).endswith(".c"):
-                f.write("<div>\n<details>\n")
+                f.write("<details>\n")
                 f.write("<summary>C</summary>\n")
                 f.write(f"<pre><code class='language-c'>\n{code_content}\n</code></pre>\n")
-                f.write("</details>\n</div>\n\n")
+                f.write("</details>\n\n")
             elif str(file).endswith(".cpp"):
-                f.write("<div>\n<details>\n")
+                f.write("<details>\n")
                 f.write("<summary>C++</summary>\n")
                 f.write(f"<pre><code class='language-cpp'>\n{code_content}\n</code></pre>\n")
-                f.write("</details>\n</div>\n\n")
+                f.write("</details>\n\n")
             elif str(file).endswith(".java"):
-                f.write("<div>\n<details>\n")
+                f.write("<details>\n")
                 f.write("<summary>Java</summary>\n")
                 f.write(f"<pre><code class='language-java'>\n{code_content}\n</code></pre>\n")
-                f.write("</details>\n</div>\n\n")
+                f.write("</details>\n\n")
             elif str(file).endswith(".js"):
-                f.write("<div>\n<details>\n")
+                f.write("<details>\n")
                 f.write("<summary>JavaScript</summary>\n")
                 f.write(f"<pre><code class='language-javascript'>\n{code_content}\n</code></pre>\n")
-                f.write("</details>\n</div>\n\n")
+                f.write("</details>\n\n")
     f.write("</details>\n\n")
     f.write("<hr>\n")
     f.write(description)
